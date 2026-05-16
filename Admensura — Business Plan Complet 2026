@@ -1,0 +1,3474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admensura — Business Plan Complet 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        :root {
+            --r: #8B1A1A;
+            --rm: #B22222;
+            --or: #B8860B;
+            --or-l: #D4A017;
+            --or-p: #F0D080;
+            --or-bg: #FDF8F0;
+            --ink: #0E0707;
+            --ink2: #1A0A0A;
+            --cream: #FDF6EC;
+            --dust: #8A7070;
+            --smoke: #3A2828;
+            --sage: #5A7A5A;
+            --sage-l: #8FAF8F;
+            --green: #2D7A4F;
+            --green-l: #4DAA72;
+            --purple: #5C1A6B;
+            --purple-l: #C4A0D0;
+            --white: #FFFFFF;
+            --juin: #5C1A6B;
+            --juil: #C23B00;
+            --aout: #D4920A;
+            --sept: #2D7A4F
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: var(--ink);
+            color: var(--cream);
+            font-family: 'Epilogue', sans-serif;
+            overflow-x: hidden
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            opacity: .5
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 48px;
+            background: rgba(14, 7, 7, .95);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(184, 134, 11, .12)
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            letter-spacing: 6px;
+            color: var(--or);
+            text-transform: uppercase
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap
+        }
+
+        .nav-links a {
+            font-size: 8px;
+            letter-spacing: 2px;
+            color: var(--dust);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            transition: color .2s;
+            white-space: nowrap
+        }
+
+        .nav-links a:hover {
+            color: var(--or)
+        }
+
+        .cover {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 80px 80px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .cover-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 75% 20%, rgba(139, 26, 26, .18) 0%, transparent 55%), radial-gradient(ellipse 40% 50% at 15% 75%, rgba(92, 26, 107, .10) 0%, transparent 55%), linear-gradient(165deg, #0E0707 0%, #1A0808 55%, #0E0707 100%)
+        }
+
+        .cover-vline {
+            position: absolute;
+            right: 100px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent 5%, rgba(184, 134, 11, .15) 50%, transparent 95%)
+        }
+
+        .cover-tag {
+            font-size: 9px;
+            letter-spacing: 6px;
+            color: var(--or-l);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1
+        }
+
+        .cover h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(64px, 9vw, 120px);
+            font-weight: 300;
+            line-height: .88;
+            letter-spacing: -3px;
+            position: relative;
+            z-index: 1
+        }
+
+        .cover h1 em {
+            font-style: italic;
+            color: var(--or)
+        }
+
+        .cover-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--dust);
+            margin-top: 18px;
+            position: relative;
+            z-index: 1
+        }
+
+        .cover-kpis {
+            position: relative;
+            z-index: 1;
+            margin-top: 52px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px
+        }
+
+        .ckpi {
+            padding: 20px 22px;
+            background: rgba(184, 134, 11, .06);
+            border: 1px solid rgba(184, 134, 11, .18);
+            border-top: 3px solid var(--or)
+        }
+
+        .ckpi-val {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--or);
+            line-height: 1
+        }
+
+        .ckpi-label {
+            font-size: 9px;
+            letter-spacing: 2px;
+            color: var(--dust);
+            text-transform: uppercase;
+            margin-top: 6px;
+            line-height: 1.4
+        }
+
+        .cover-manifeste {
+            position: relative;
+            z-index: 1;
+            margin-top: 28px;
+            padding: 22px 28px;
+            background: rgba(184, 134, 11, .05);
+            border-left: 2px solid var(--or);
+            max-width: 560px
+        }
+
+        .cover-manifeste p {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 17px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .85)
+        }
+
+        .toc {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            margin-bottom: 2px
+        }
+
+        .toc-item {
+            padding: 16px 20px;
+            border: 1px solid rgba(255, 255, 255, .04);
+            background: rgba(255, 255, 255, .02);
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: background .2s
+        }
+
+        .toc-item:hover {
+            background: rgba(184, 134, 11, .06)
+        }
+
+        .toc-num {
+            font-size: 8px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 4px
+        }
+
+        .toc-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            color: var(--cream)
+        }
+
+        .wrapper {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 80px 80px;
+            position: relative;
+            z-index: 1
+        }
+
+        .chapter {
+            margin-bottom: 80px;
+            scroll-margin-top: 80px
+        }
+
+        .page-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(184, 134, 11, .2), transparent);
+            margin: 60px 0
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px
+        }
+
+        .section-num {
+            font-size: 8px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            border: 1px solid;
+            padding: 4px 10px
+        }
+
+        .section-name {
+            font-size: 8px;
+            letter-spacing: 5px;
+            color: var(--dust);
+            text-transform: uppercase
+        }
+
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(40px, 5vw, 72px);
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 16px
+        }
+
+        .chapter-title em {
+            font-style: italic;
+            color: var(--or)
+        }
+
+        .chapter-intro {
+            font-size: 14px;
+            line-height: 1.85;
+            color: rgba(253, 246, 236, .65);
+            max-width: 720px;
+            margin-bottom: 40px
+        }
+
+        .sub-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--cream);
+            margin: 24px 0 10px
+        }
+
+        .hl-box {
+            padding: 22px 28px;
+            background: rgba(184, 134, 11, .06);
+            border: 1px solid rgba(184, 134, 11, .2);
+            border-left: 4px solid var(--or);
+            margin-bottom: 20px
+        }
+
+        .hl-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: rgba(253, 246, 236, .85)
+        }
+
+        .hl-box strong {
+            color: var(--cream)
+        }
+
+        .hl-box.rouge {
+            background: rgba(139, 26, 26, .06);
+            border-color: rgba(139, 26, 26, .2);
+            border-left-color: var(--rm)
+        }
+
+        .hl-box.vert {
+            background: rgba(45, 122, 79, .07);
+            border-color: rgba(45, 122, 79, .25);
+            border-left-color: var(--green)
+        }
+
+        .hl-box.purple {
+            background: rgba(92, 26, 107, .07);
+            border-color: rgba(196, 160, 208, .18);
+            border-left-color: var(--purple-l)
+        }
+
+        .kpi-strip {
+            display: grid;
+            gap: 2px;
+            margin-bottom: 24px
+        }
+
+        .kpi-strip.cols-4 {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .kpi-strip.cols-3 {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .kpi-strip.cols-2 {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .kpi {
+            padding: 22px 20px;
+            background: rgba(255, 255, 255, .025);
+            border: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .kpi.gold {
+            border-top: 3px solid var(--or)
+        }
+
+        .kpi.rouge {
+            border-top: 3px solid var(--rm)
+        }
+
+        .kpi.vert {
+            border-top: 3px solid var(--green)
+        }
+
+        .kpi.purple {
+            border-top: 3px solid var(--purple)
+        }
+
+        .kpi-val {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 6px
+        }
+
+        .kpi.gold .kpi-val {
+            color: var(--or)
+        }
+
+        .kpi.rouge .kpi-val {
+            color: var(--rm)
+        }
+
+        .kpi.vert .kpi-val {
+            color: var(--green-l)
+        }
+
+        .kpi.purple .kpi-val {
+            color: var(--purple-l)
+        }
+
+        .kpi-label {
+            font-size: 9px;
+            letter-spacing: 2px;
+            color: var(--dust);
+            text-transform: uppercase;
+            line-height: 1.4
+        }
+
+        .kpi-sub {
+            font-size: 11px;
+            color: rgba(253, 246, 236, .45);
+            margin-top: 4px
+        }
+
+        .dtable {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 20px
+        }
+
+        .dtable th {
+            padding: 10px 14px;
+            text-align: left;
+            background: rgba(139, 26, 26, .9);
+            color: var(--white);
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600
+        }
+
+        .dtable td {
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+            color: rgba(253, 246, 236, .82);
+            vertical-align: top;
+            line-height: 1.6
+        }
+
+        .dtable tr:nth-child(even) td {
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .dtable tr.total td {
+            background: rgba(184, 134, 11, .08);
+            border-top: 2px solid rgba(184, 134, 11, .3);
+            font-weight: 700;
+            color: var(--or)
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px
+        }
+
+        .three-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2px;
+            margin-bottom: 20px
+        }
+
+        .four-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2px;
+            margin-bottom: 20px
+        }
+
+        .card {
+            padding: 24px 28px;
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .card.or {
+            background: rgba(184, 134, 11, .05);
+            border-color: rgba(184, 134, 11, .2)
+        }
+
+        .card.rouge {
+            background: rgba(139, 26, 26, .05);
+            border-color: rgba(139, 26, 26, .2)
+        }
+
+        .card.vert {
+            background: rgba(45, 122, 79, .05);
+            border-color: rgba(45, 122, 79, .2)
+        }
+
+        .card.purple {
+            background: rgba(92, 26, 107, .06);
+            border-color: rgba(196, 160, 208, .15)
+        }
+
+        .card-label {
+            font-size: 8px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px
+        }
+
+        .card.or .card-label {
+            color: var(--or)
+        }
+
+        .card.rouge .card-label {
+            color: var(--rm)
+        }
+
+        .card.vert .card-label {
+            color: var(--green-l)
+        }
+
+        .card.purple .card-label {
+            color: var(--purple-l)
+        }
+
+        .card-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            margin-bottom: 8px
+        }
+
+        .card-text {
+            font-size: 12px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .65)
+        }
+
+        .blist {
+            list-style: none;
+            margin-bottom: 16px
+        }
+
+        .blist li {
+            font-size: 13px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .8);
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 4px
+        }
+
+        .blist li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--or-l);
+            font-size: 11px
+        }
+
+        .body-text {
+            font-size: 14px;
+            line-height: 1.85;
+            color: rgba(253, 246, 236, .75);
+            margin-bottom: 16px
+        }
+
+        .body-small {
+            font-size: 12px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .6)
+        }
+
+        .italic-note {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .7);
+            margin-bottom: 16px
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            margin-bottom: 20px
+        }
+
+        .swot-cell {
+            padding: 24px
+        }
+
+        .swot-cell.S {
+            background: rgba(45, 122, 79, .07);
+            border: 1px solid rgba(45, 122, 79, .2)
+        }
+
+        .swot-cell.W {
+            background: rgba(139, 26, 26, .06);
+            border: 1px solid rgba(139, 26, 26, .18)
+        }
+
+        .swot-cell.O {
+            background: rgba(184, 134, 11, .06);
+            border: 1px solid rgba(184, 134, 11, .18)
+        }
+
+        .swot-cell.T {
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(255, 255, 255, .06)
+        }
+
+        .swot-letter {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 8px;
+            display: block
+        }
+
+        .swot-cell.S .swot-letter {
+            color: var(--green)
+        }
+
+        .swot-cell.W .swot-letter {
+            color: var(--rm)
+        }
+
+        .swot-cell.O .swot-letter {
+            color: var(--or)
+        }
+
+        .swot-cell.T .swot-letter {
+            color: var(--dust)
+        }
+
+        .swot-name {
+            font-size: 9px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 14px
+        }
+
+        .swot-cell.S .swot-name {
+            color: var(--green-l)
+        }
+
+        .swot-cell.W .swot-name {
+            color: var(--rm)
+        }
+
+        .swot-cell.O .swot-name {
+            color: var(--or-l)
+        }
+
+        .swot-cell.T .swot-name {
+            color: var(--dust)
+        }
+
+        .pestel-item {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 0;
+            margin-bottom: 2px;
+            border: 1px solid rgba(255, 255, 255, .04)
+        }
+
+        .pestel-letter {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px
+        }
+
+        .pestel-P .pestel-letter {
+            color: #9B59B6;
+            background: rgba(155, 89, 182, .07)
+        }
+
+        .pestel-E .pestel-letter {
+            color: #E67E22;
+            background: rgba(230, 126, 34, .06)
+        }
+
+        .pestel-S .pestel-letter {
+            color: #3498DB;
+            background: rgba(52, 152, 219, .06)
+        }
+
+        .pestel-Te .pestel-letter {
+            color: #2ECC71;
+            background: rgba(46, 204, 113, .06)
+        }
+
+        .pestel-En .pestel-letter {
+            color: var(--sage-l);
+            background: rgba(90, 122, 90, .07)
+        }
+
+        .pestel-L .pestel-letter {
+            color: var(--or);
+            background: rgba(184, 134, 11, .07)
+        }
+
+        .pestel-content {
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, .015)
+        }
+
+        .pestel-title {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--dust);
+            margin-bottom: 8px
+        }
+
+        .pestel-points {
+            font-size: 12px;
+            line-height: 1.75;
+            color: rgba(253, 246, 236, .7)
+        }
+
+        .pestel-point {
+            margin-bottom: 5px;
+            padding-left: 12px;
+            position: relative
+        }
+
+        .pestel-point::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--or-l)
+        }
+
+        .tag-opp {
+            background: rgba(45, 122, 79, .18);
+            color: var(--green-l);
+            font-size: 8px;
+            letter-spacing: 1px;
+            padding: 1px 6px;
+            margin-right: 5px
+        }
+
+        .tag-risk {
+            background: rgba(139, 26, 26, .18);
+            color: var(--rm);
+            font-size: 8px;
+            letter-spacing: 1px;
+            padding: 1px 6px;
+            margin-right: 5px
+        }
+
+        .tag-neutral {
+            background: rgba(255, 255, 255, .08);
+            color: var(--dust);
+            font-size: 8px;
+            letter-spacing: 1px;
+            padding: 1px 6px;
+            margin-right: 5px
+        }
+
+        .coloris-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px
+        }
+
+        .coloris-card {
+            padding: 28px
+        }
+
+        .coloris-card.or {
+            background: linear-gradient(135deg, #2A1A00, #3A2500);
+            border: 1px solid rgba(212, 146, 10, .3)
+        }
+
+        .coloris-card.vert {
+            background: linear-gradient(135deg, #0A1A0A, #142014);
+            border: 1px solid rgba(90, 122, 90, .3)
+        }
+
+        .coloris-dot {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            margin-bottom: 16px
+        }
+
+        .coloris-card.or .coloris-dot {
+            background: linear-gradient(135deg, #D4920A, #F0C84A)
+        }
+
+        .coloris-card.vert .coloris-dot {
+            background: linear-gradient(135deg, #5A7A5A, #8FAF8F)
+        }
+
+        .coloris-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            margin-bottom: 6px
+        }
+
+        .coloris-card.or .coloris-name {
+            color: var(--or-l)
+        }
+
+        .coloris-card.vert .coloris-name {
+            color: var(--sage-l)
+        }
+
+        .coloris-tagline {
+            font-size: 12px;
+            font-style: italic;
+            color: var(--dust);
+            line-height: 1.5;
+            margin-bottom: 10px
+        }
+
+        .palette-row {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px
+        }
+
+        .swatch {
+            flex: 1;
+            height: 120px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: flex .4s
+        }
+
+        .swatch:hover {
+            flex: 2
+        }
+
+        .swatch-inner {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 12px;
+            background: linear-gradient(to top, rgba(0, 0, 0, .55) 0%, transparent 60%)
+        }
+
+        .swatch-name {
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2px
+        }
+
+        .swatch-hex {
+            font-size: 10px;
+            color: rgba(255, 255, 255, .5)
+        }
+
+        .semaines {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: 24px
+        }
+
+        .semaine-row {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 0
+        }
+
+        .sem-label {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-right: 2px solid rgba(255, 255, 255, .06);
+            background: rgba(255, 255, 255, .018)
+        }
+
+        .sem-label.key {
+            background: rgba(184, 134, 11, .05);
+            border-right-color: var(--or)
+        }
+
+        .sem-label.crit {
+            background: rgba(194, 59, 0, .07);
+            border-right-color: #C23B00
+        }
+
+        .sem-label.mile {
+            background: rgba(45, 122, 79, .07);
+            border-right-color: var(--sage)
+        }
+
+        .sem-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--dust);
+            line-height: 1
+        }
+
+        .sem-label.key .sem-num {
+            color: var(--or)
+        }
+
+        .sem-label.crit .sem-num {
+            color: #C23B00
+        }
+
+        .sem-label.mile .sem-num {
+            color: var(--sage-l)
+        }
+
+        .sem-dates {
+            font-size: 9px;
+            color: rgba(138, 112, 112, .55);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px
+        }
+
+        .sem-content {
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, .03)
+        }
+
+        .sem-content.key {
+            background: rgba(184, 134, 11, .03)
+        }
+
+        .sem-content.crit {
+            background: rgba(194, 59, 0, .04)
+        }
+
+        .sem-content.mile {
+            background: rgba(45, 122, 79, .04)
+        }
+
+        .sem-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 6px
+        }
+
+        .sem-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 6px
+        }
+
+        .stask {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 1px;
+            display: inline-flex;
+            align-items: center
+        }
+
+        .stask.admin {
+            background: rgba(92, 26, 107, .15);
+            border: 1px solid rgba(196, 160, 208, .2);
+            color: var(--purple-l)
+        }
+
+        .stask.proto {
+            background: rgba(232, 102, 10, .12);
+            border: 1px solid rgba(232, 102, 10, .25);
+            color: #E8660A
+        }
+
+        .stask.ig {
+            background: rgba(225, 48, 108, .1);
+            border: 1px solid rgba(225, 48, 108, .2);
+            color: #f06090
+        }
+
+        .stask.tk {
+            background: rgba(105, 201, 208, .09);
+            border: 1px solid rgba(105, 201, 208, .18);
+            color: #69C9D0
+        }
+
+        .stask.site {
+            background: rgba(184, 134, 11, .1);
+            border: 1px solid rgba(184, 134, 11, .22);
+            color: var(--or)
+        }
+
+        .stask.prod {
+            background: rgba(45, 122, 79, .1);
+            border: 1px solid rgba(143, 175, 143, .2);
+            color: var(--sage-l)
+        }
+
+        .stask.log {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .1);
+            color: rgba(253, 246, 236, .6)
+        }
+
+        .stask.drop {
+            background: rgba(194, 59, 0, .12);
+            border: 1px solid rgba(194, 59, 0, .3);
+            color: #ff8855
+        }
+
+        .sem-note {
+            font-size: 11px;
+            line-height: 1.65;
+            color: rgba(253, 246, 236, .45);
+            font-style: italic
+        }
+
+        .chk-group {
+            margin-bottom: 24px
+        }
+
+        .chk-group-hdr {
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(255, 255, 255, .05);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            user-select: none
+        }
+
+        .chk-group-hdr:hover {
+            background: rgba(255, 255, 255, .03)
+        }
+
+        .chk-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0
+        }
+
+        .chk-group-title {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            flex: 1
+        }
+
+        .chk-group-count {
+            font-size: 9px;
+            color: var(--dust)
+        }
+
+        .chk-group-arrow {
+            font-size: 11px;
+            color: var(--dust);
+            transition: transform .3s
+        }
+
+        .chk-group.open .chk-group-arrow {
+            transform: rotate(180deg)
+        }
+
+        .chk-items {
+            display: none
+        }
+
+        .chk-group.open .chk-items {
+            display: block
+        }
+
+        .chk-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, .015);
+            border: 1px solid rgba(255, 255, 255, .04);
+            border-bottom: none;
+            cursor: pointer;
+            transition: background .15s
+        }
+
+        .chk-item:last-child {
+            border-bottom: 1px solid rgba(255, 255, 255, .04)
+        }
+
+        .chk-item:hover {
+            background: rgba(255, 255, 255, .025)
+        }
+
+        .chk-item.checked {
+            background: rgba(45, 122, 79, .05);
+            border-color: rgba(143, 175, 143, .1)
+        }
+
+        .chk-box {
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            flex-shrink: 0;
+            border: 1px solid rgba(184, 134, 11, .35);
+            background: transparent;
+            margin-top: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            color: transparent;
+            transition: all .18s
+        }
+
+        .chk-item.checked .chk-box {
+            background: var(--sage);
+            border-color: var(--sage);
+            color: white
+        }
+
+        .chk-label {
+            font-size: 12px;
+            line-height: 1.6;
+            color: rgba(253, 246, 236, .82);
+            flex: 1
+        }
+
+        .chk-item.checked .chk-label {
+            color: rgba(253, 246, 236, .35);
+            text-decoration: line-through
+        }
+
+        .ctag {
+            font-size: 8px;
+            letter-spacing: 1px;
+            padding: 2px 6px;
+            border-radius: 1px;
+            flex-shrink: 0;
+            margin-top: 2px
+        }
+
+        .ctag.admin {
+            background: rgba(92, 26, 107, .18);
+            color: var(--purple-l)
+        }
+
+        .ctag.proto {
+            background: rgba(232, 102, 10, .15);
+            color: #E8660A
+        }
+
+        .ctag.ig {
+            background: rgba(225, 48, 108, .12);
+            color: #f06090
+        }
+
+        .ctag.tk {
+            background: rgba(105, 201, 208, .1);
+            color: #69C9D0
+        }
+
+        .ctag.site {
+            background: rgba(184, 134, 11, .12);
+            color: var(--or)
+        }
+
+        .ctag.prod {
+            background: rgba(45, 122, 79, .12);
+            color: var(--sage-l)
+        }
+
+        .ctag.log {
+            background: rgba(255, 255, 255, .06);
+            color: rgba(253, 246, 236, .55)
+        }
+
+        .ctag.drop {
+            background: rgba(194, 59, 0, .15);
+            color: #ff8855
+        }
+
+        .ctag.sn {
+            background: rgba(255, 215, 0, .1);
+            color: #FFD700
+        }
+
+        .prog-wrap {
+            margin-bottom: 32px;
+            padding: 20px 24px;
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(184, 134, 11, .12)
+        }
+
+        .prog-hdr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px
+        }
+
+        .prog-title {
+            font-size: 9px;
+            letter-spacing: 4px;
+            color: var(--dust);
+            text-transform: uppercase
+        }
+
+        .prog-count {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: var(--or)
+        }
+
+        .prog-bar {
+            height: 3px;
+            background: rgba(255, 255, 255, .05);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 8px
+        }
+
+        .prog-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--juin), var(--juil), var(--aout), var(--sept));
+            border-radius: 2px;
+            transition: width .6s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        .prog-months {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px
+        }
+
+        .prog-month {
+            text-align: center;
+            padding: 6px
+        }
+
+        .prog-month-name {
+            font-size: 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 3px
+        }
+
+        .prog-month-count {
+            font-size: 11px;
+            font-weight: 600
+        }
+
+        .voice-ex {
+            padding: 20px 26px;
+            border-left: 3px solid;
+            background: rgba(255, 255, 255, .02);
+            margin-bottom: 8px
+        }
+
+        .voice-ex.good {
+            border-color: var(--sage)
+        }
+
+        .voice-ex.bad {
+            border-color: var(--rm);
+            opacity: .5
+        }
+
+        .voice-ex-tag {
+            font-size: 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px
+        }
+
+        .voice-ex.good .voice-ex-tag {
+            color: var(--sage-l)
+        }
+
+        .voice-ex.bad .voice-ex-tag {
+            color: var(--rm)
+        }
+
+        .voice-ex-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 6px
+        }
+
+        .be-callout {
+            padding: 20px 24px;
+            background: rgba(184, 134, 11, .07);
+            border: 1px solid rgba(184, 134, 11, .2);
+            border-left: 4px solid var(--or);
+            margin-bottom: 20px
+        }
+
+        .be-callout p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: rgba(253, 246, 236, .82)
+        }
+
+        .platform-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border: 1px solid;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px
+        }
+
+        .pp-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%
+        }
+
+        .pp-ig {
+            border-color: rgba(225, 48, 108, .4);
+            background: rgba(225, 48, 108, .08);
+            color: #E1306C
+        }
+
+        .pp-ig .pp-dot {
+            background: #E1306C
+        }
+
+        .pp-tk {
+            border-color: rgba(105, 201, 208, .4);
+            background: rgba(105, 201, 208, .07);
+            color: #69C9D0
+        }
+
+        .pp-tk .pp-dot {
+            background: #69C9D0
+        }
+
+        .pp-sn {
+            border-color: rgba(255, 215, 0, .3);
+            background: rgba(255, 215, 0, .06);
+            color: #FFD700
+        }
+
+        .pp-sn .pp-dot {
+            background: #FFD700
+        }
+
+        .htag {
+            display: inline-block;
+            padding: 6px 12px;
+            font-size: 11px;
+            border: 1px solid;
+            border-radius: 1px;
+            margin: 3px
+        }
+
+        .htag.core {
+            border-color: rgba(184, 134, 11, .4);
+            color: var(--or);
+            background: rgba(184, 134, 11, .06)
+        }
+
+        .htag.mode {
+            border-color: rgba(225, 48, 108, .3);
+            color: rgba(225, 48, 108, .85);
+            background: rgba(225, 48, 108, .05)
+        }
+
+        .htag.niche {
+            border-color: rgba(255, 255, 255, .1);
+            color: rgba(253, 246, 236, .5);
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .synthese {
+            padding: 48px 56px;
+            background: linear-gradient(135deg, rgba(139, 26, 26, .10), rgba(184, 134, 11, .09));
+            border: 1px solid rgba(184, 134, 11, .22);
+            position: relative;
+            overflow: hidden
+        }
+
+        .synthese::before {
+            content: 'ADMENSURA';
+            position: absolute;
+            right: -20px;
+            bottom: -15px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 80px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: rgba(184, 134, 11, .04);
+            pointer-events: none
+        }
+
+        .synthese-label {
+            font-size: 8px;
+            letter-spacing: 5px;
+            color: var(--or);
+            text-transform: uppercase;
+            margin-bottom: 16px
+        }
+
+        .synthese-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: clamp(16px, 2.2vw, 22px);
+            line-height: 1.9;
+            color: rgba(253, 246, 236, .9);
+            max-width: 760px
+        }
+
+        .synthese-text strong {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--or)
+        }
+
+        .month-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            margin-bottom: 40px
+        }
+
+        .mbar {
+            padding: 18px 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: background .2s;
+            border: 1px solid rgba(255, 255, 255, .04)
+        }
+
+        .mbar:hover {
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .mbar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px
+        }
+
+        .mbar.juin::before {
+            background: var(--juin)
+        }
+
+        .mbar.juil::before {
+            background: var(--juil)
+        }
+
+        .mbar.aout::before {
+            background: var(--aout)
+        }
+
+        .mbar.sept::before {
+            background: var(--sept)
+        }
+
+        .mbar-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px
+        }
+
+        .mbar.juin .mbar-name {
+            color: var(--juin)
+        }
+
+        .mbar.juil .mbar-name {
+            color: var(--juil)
+        }
+
+        .mbar.aout .mbar-name {
+            color: var(--aout)
+        }
+
+        .mbar.sept .mbar-name {
+            color: var(--sept)
+        }
+
+        .mbar-focus {
+            font-size: 10px;
+            color: var(--dust);
+            line-height: 1.5
+        }
+
+        .doc-footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            font-size: 9px;
+            letter-spacing: 4px;
+            color: rgba(138, 112, 112, .2);
+            text-transform: uppercase
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity .65s ease, transform .65s ease
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: none
+        }
+
+        @media(max-width:900px) {
+            .nav {
+                padding: 10px 18px
+            }
+
+            .nav-links {
+                display: none
+            }
+
+            .cover,
+            .wrapper {
+                padding-left: 22px;
+                padding-right: 22px
+            }
+
+            .cover {
+                padding-bottom: 52px
+            }
+
+            .cover-kpis,
+            .toc,
+            .kpi-strip.cols-4,
+            .kpi-strip.cols-3,
+            .two-col,
+            .three-col,
+            .four-col,
+            .swot-grid,
+            .coloris-cards,
+            .month-bar,
+            .prog-months {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .semaine-row {
+                grid-template-columns: 72px 1fr
+            }
+
+            .cover h1 {
+                font-size: 52px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">Admensura</div>
+        <div class="nav-links">
+            <a href="#identite">Identité</a><a href="#marche">Marché</a><a href="#produit">Produit</a>
+            <a href="#marque">Marque & DA</a><a href="#editorial">Éditorial</a><a href="#lancement">Lancement</a>
+            <a href="#juridique">Juridique</a><a href="#financier">Financier</a><a href="#roadmap">Roadmap</a>
+        </div>
+    </nav>
+
+    <section class="cover">
+        <div class="cover-bg"></div>
+        <div class="cover-vline"></div>
+        <div class="cover-tag">Business Plan Complet — 2026 — Document Confidentiel</div>
+        <h1>Admen<em>sura</em></h1>
+        <p class="cover-sub">La mode du sous-vêtement — Lingerie premium D2C — Lancement septembre 2026</p>
+        <div class="cover-kpis">
+            <div class="ckpi">
+                <div class="ckpi-val">120 €</div>
+                <div class="ckpi-label">Prix de vente HT</div>
+            </div>
+            <div class="ckpi">
+                <div class="ckpi-val">75 %</div>
+                <div class="ckpi-label">Marge brute</div>
+            </div>
+            <div class="ckpi">
+                <div class="ckpi-val">5 000 €</div>
+                <div class="ckpi-label">Budget lancement</div>
+            </div>
+            <div class="ckpi">
+                <div class="ckpi-val">29 u</div>
+                <div class="ckpi-label">Seuil de rentabilité</div>
+            </div>
+        </div>
+        <div class="cover-manifeste">
+            <p>On ne te vend pas de la confiance. Tu l'as déjà.<br>On crée des pièces pour les femmes qui n'ont besoin de personne pour le leur rappeler — mais qui aiment, parfois, <em>se voir dans quelque chose de beau.</em></p>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <div class="page-divider"></div>
+
+        <div class="toc reveal">
+            <a class="toc-item" href="#identite" style="border-top:2px solid var(--rm)">
+                <div class="toc-num" style="color:var(--rm)">01</div>
+                <div class="toc-name">Identité & Positionnement</div>
+            </a>
+            <a class="toc-item" href="#marche" style="border-top:2px solid var(--or)">
+                <div class="toc-num" style="color:var(--or)">02</div>
+                <div class="toc-name">Étude de Marché</div>
+            </a>
+            <a class="toc-item" href="#produit" style="border-top:2px solid #E8660A">
+                <div class="toc-num" style="color:#E8660A">03</div>
+                <div class="toc-name">Produit & Fabrication</div>
+            </a>
+            <a class="toc-item" href="#marque" style="border-top:2px solid var(--purple-l)">
+                <div class="toc-num" style="color:var(--purple-l)">04</div>
+                <div class="toc-name">Identité Visuelle & Marque</div>
+            </a>
+            <a class="toc-item" href="#editorial" style="border-top:2px solid #E1306C">
+                <div class="toc-num" style="color:#E1306C">05</div>
+                <div class="toc-name">Ligne Éditoriale</div>
+            </a>
+            <a class="toc-item" href="#lancement" style="border-top:2px solid var(--or-l)">
+                <div class="toc-num" style="color:var(--or-l)">06</div>
+                <div class="toc-name">Stratégie de Lancement</div>
+            </a>
+            <a class="toc-item" href="#juridique" style="border-top:2px solid var(--sage-l)">
+                <div class="toc-num" style="color:var(--sage-l)">07</div>
+                <div class="toc-name">Structure Juridique</div>
+            </a>
+            <a class="toc-item" href="#financier" style="border-top:2px solid var(--green)">
+                <div class="toc-num" style="color:var(--green)">08</div>
+                <div class="toc-name">Prévisionnel Financier</div>
+            </a>
+            <a class="toc-item" href="#roadmap" style="border-top:2px solid var(--aout)">
+                <div class="toc-num" style="color:var(--aout)">09</div>
+                <div class="toc-name">Fiche de Route</div>
+            </a>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 01 IDENTITÉ -->
+        <div class="chapter" id="identite">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(139,26,26,.4);color:var(--rm)">01</span><span class="section-name">Identité & Positionnement</span></div>
+            <h2 class="chapter-title reveal">Ce qu'<em>est</em><br>Admensura</h2>
+            <div class="hl-box reveal">
+                <p>Admensura est la première maison de lingerie qui traite le sous-vêtement comme ce qu'il est vraiment : <strong>un acte de mode</strong>. Pas un outil de séduction, pas un utilitaire, pas un manifeste creux. Une pièce pensée pour la femme qui se connaît déjà — et qui mérite une marque à sa hauteur.</p>
+            </div>
+            <div class="two-col reveal">
+                <div class="card or">
+                    <div class="card-label">Mission</div>
+                    <div class="card-title">Créer ce qui n'existe nulle part</div>
+                    <p class="card-text">Des ensembles qui cassent les codes et refusent les cases. Pour les femmes qui s'habillent d'abord pour elles-mêmes. Chaque pièce est une première fois.</p>
+                </div>
+                <div class="card or">
+                    <div class="card-label">Territoire</div>
+                    <div class="card-title">Premium assumé, chaleur réelle</div>
+                    <p class="card-text">Prix juste pour une pièce rare. Admensura ne s'excuse pas d'être exigeante — mais elle accueille, reconnaît, célèbre. Le luxe avec de l'âme dedans.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Valeurs fondatrices</div>
+            <div class="four-col reveal">
+                <div class="card" style="border-top:3px solid var(--rm)">
+                    <div class="card-label" style="color:var(--rm)">Liberté</div>
+                    <p class="card-text">Aucune règle, aucun cliché, aucune case. La créativité sans compromis.</p>
+                </div>
+                <div class="card" style="border-top:3px solid #E8660A">
+                    <div class="card-label" style="color:#E8660A">Audace</div>
+                    <p class="card-text">Le design qui ose. Le beau qui surprend. Une marque qui ne demande pas la permission.</p>
+                </div>
+                <div class="card" style="border-top:3px solid var(--or)">
+                    <div class="card-label" style="color:var(--or)">Reconnaissance</div>
+                    <p class="card-text">Admensura ne te construit pas — elle te reflète. Elle voit ce que tu savais déjà de toi-même.</p>
+                </div>
+                <div class="card" style="border-top:3px solid var(--purple-l)">
+                    <div class="card-label" style="color:var(--purple-l)">Singularité</div>
+                    <p class="card-text">L'authenticité comme engagement, pas comme slogan. Chaque pièce est une première fois.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">La confiance Admensura</div>
+            <div class="two-col reveal">
+                <div class="card rouge">
+                    <div class="card-label">Ce qu'Admensura ne fait pas</div>
+                    <p class="card-text italic-note">"Porter notre lingerie te rendra plus confiante, plus belle, plus toi."</p>
+                    <p class="card-text">Ce discours présuppose un manque. Admensura ne part jamais de ce postulat.</p>
+                </div>
+                <div class="card or">
+                    <div class="card-label">Ce qu'Admensura fait</div>
+                    <p class="card-text italic-note">"Cette pièce a été créée pour quelqu'un qui se connaît déjà. On pense que c'est toi."</p>
+                    <p class="card-text">Ce discours met la cliente en position de force. Elle choisit Admensura parce qu'elle le mérite.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Portrait clientèle</div>
+            <div class="hl-box reveal">
+                <p>Elle a la vingtaine mais a déjà compris des choses que d'autres mettront dix ans à saisir. Elle gagne sa vie, vit seule, s'appartient. En public, captivante. En privé, rêveuse. Elle n'achète pas de lingerie parce qu'elle en a besoin — mais parce qu'elle le mérite. Elle choisit Admensura parce que — comme elle — ça n'entre dans aucune case.</p>
+            </div>
+            <div class="kpi-strip cols-3 reveal">
+                <div class="kpi gold">
+                    <div class="kpi-val">22–38 ans</div>
+                    <div class="kpi-label">Tranche d'âge cible</div>
+                    <div class="kpi-sub">Active, revenus propres, urbaine</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">D2C</div>
+                    <div class="kpi-label">Canal exclusif</div>
+                    <div class="kpi-sub">Digital native, e-commerce</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">Pour elle</div>
+                    <div class="kpi-label">Motivation d'achat</div>
+                    <div class="kpi-sub">S'habille d'abord pour elle-même</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 02 MARCHÉ -->
+        <div class="chapter" id="marche">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(184,134,11,.4);color:var(--or)">02</span><span class="section-name">Étude de Marché</span></div>
+            <h2 class="chapter-title reveal">Le <em>terrain</em></h2>
+            <div class="kpi-strip cols-4 reveal">
+                <div class="kpi gold">
+                    <div class="kpi-val">2,01 Md€</div>
+                    <div class="kpi-label">CA marché France 2025</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">+3,1 %</div>
+                    <div class="kpi-label">Hausse du prix moyen</div>
+                    <div class="kpi-sub">Les femmes achètent moins, mais mieux</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">11,4 Md$</div>
+                    <div class="kpi-label">Luxe accessible mondial 2024</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">+8,9 %</div>
+                    <div class="kpi-label">Croissance annuelle segment</div>
+                </div>
+            </div>
+            <div class="sub-title reveal">Tendances clés 2025-2026</div>
+            <div class="three-col reveal">
+                <div class="card or">
+                    <div class="card-label">Lingerie visible</div>
+                    <div class="card-title">+19 %</div>
+                    <p class="card-text">Les sous-vêtements portés visiblement sont en forte hausse. La lingerie redevient un statement de mode à part entière.</p>
+                </div>
+                <div class="card or">
+                    <div class="card-label">Tulle & transparence</div>
+                    <div class="card-title">Dominant</div>
+                    <p class="card-text">Les tissus transparents dominent les collections 2025-2026. Admensura est exactement dans cet ADN.</p>
+                </div>
+                <div class="card or">
+                    <div class="card-label">Digital</div>
+                    <div class="card-title">21 %</div>
+                    <p class="card-text">Part de marché du canal digital, en progression constante — canal prioritaire pour Admensura.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Analyse concurrentielle</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Marque</th>
+                        <th>Prix</th>
+                        <th>Positionnement</th>
+                        <th>Vs Admensura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ysé</td>
+                        <td>80–130 €</td>
+                        <td>Premium français, romantique, épuré</td>
+                        <td>Bonnets limités, design moins mode, pas inclusive</td>
+                    </tr>
+                    <tr>
+                        <td>Bucolik'</td>
+                        <td>150–250 €</td>
+                        <td>Luxe accessible, petites séries</td>
+                        <td>Hors budget cible, moins présente digitalement</td>
+                    </tr>
+                    <tr>
+                        <td>Savage X Fenty</td>
+                        <td>40–80 €</td>
+                        <td>Mass market inclusif, américain</td>
+                        <td>Trop bas de gamme, perd en désirabilité</td>
+                    </tr>
+                    <tr>
+                        <td>Victoria's Secret</td>
+                        <td>40–80 €</td>
+                        <td>Mass market en repositionnement</td>
+                        <td>En crise d'image — sa cliente déçue est notre cible naturelle</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Gap de marché</div>
+            <div class="hl-box reveal">
+                <p><strong>Aucune marque française ne combine simultanément :</strong> design fort et identitaire + inclusivité réelle jusqu'au bonnet E + prix premium accessible (moins de 130 €) + ADN digital natif. Ce gap n'est pas une niche — c'est un segment entier non adressé. 76% des femmes portent un bonnet C ou plus ; le premium les abandonne systématiquement.</p>
+            </div>
+            <div class="sub-title reveal">Analyse SWOT</div>
+            <div class="swot-grid reveal">
+                <div class="swot-cell S"><span class="swot-letter">S</span>
+                    <div class="swot-name">Forces</div>
+                    <ul class="blist">
+                        <li>Marge brute 75% — vs ~60% secteur</li>
+                        <li>Design signature immédiatement reconnaissable</li>
+                        <li>Inclusivité réelle : bonnets A→E dès le lancement</li>
+                        <li>Modèle D2C pur — relation directe, contrôle total</li>
+                        <li>Fondatrice = cliente cible</li>
+                        <li>Budget maîtrisé, sans levée de fonds</li>
+                        <li>Lingerie portabilité extérieure intégrée</li>
+                    </ul>
+                </div>
+                <div class="swot-cell W"><span class="swot-letter">W</span>
+                    <div class="swot-name">Faiblesses</div>
+                    <ul class="blist">
+                        <li>Notoriété zéro au lancement</li>
+                        <li>Stock limité (100 u) — rupture ou invendus</li>
+                        <li>Dépendance à un seul fabricant</li>
+                        <li>Un seul modèle au lancement</li>
+                        <li>Absence de preuve sociale au J1</li>
+                        <li>Compétences logistique et SAV à développer</li>
+                    </ul>
+                </div>
+                <div class="swot-cell O"><span class="swot-letter">O</span>
+                    <div class="swot-name">Opportunités</div>
+                    <ul class="blist">
+                        <li>Marché en polarisation favorable au premium</li>
+                        <li>Lingerie visible +19% — tendance de fond</li>
+                        <li>Gap de marché béant, non adressé</li>
+                        <li>76% des femmes en bonnet C ou + : sous-adressées</li>
+                        <li>Drop culture et TikTok : mécanique idéale</li>
+                        <li>Victoria's Secret en crise — sa cliente est notre cible</li>
+                        <li>Croissance luxe accessible +8,9%/an</li>
+                    </ul>
+                </div>
+                <div class="swot-cell T"><span class="swot-letter">T</span>
+                    <div class="swot-name">Menaces</div>
+                    <ul class="blist">
+                        <li>Copies rapides par le fast fashion (moins de 6 mois)</li>
+                        <li>Coût d'acquisition publicitaire en hausse</li>
+                        <li>Dépendance aux algorithmes des réseaux</li>
+                        <li>Délais fabricant non contractuellement garantis</li>
+                        <li>Inflation matières premières textile</li>
+                        <li>Acteurs premium établis solides</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-title reveal">Analyse PESTEL</div>
+            <div class="pestel-item pestel-P reveal">
+                <div class="pestel-letter">P</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Politique</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Statut micro-entrepreneur : création gratuite, cotisations proportionnelles, cumulable emploi salarié</div>
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Dispositif D2E mobilisable — accompagnement et financement potentiel</div>
+                        <div class="pestel-point"><span class="tag-neutral">INF</span>Accord de libre-échange UE-Maroc — importation sans droits de douane</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pestel-item pestel-E reveal">
+                <div class="pestel-letter">E</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Économique</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Marché lingerie premium résiste mieux — les femmes coupent le bas de gamme avant le luxe accessible</div>
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Prix moyen lingerie en hausse de +3,1% en 2025 — validation du positionnement 120 €</div>
+                        <div class="pestel-point"><span class="tag-risk">RISK</span>Pouvoir d'achat sous pression — les 20-30 ans arbitrent leurs dépenses mode</div>
+                        <div class="pestel-point"><span class="tag-neutral">INF</span>Coût production Maroc compétitif vs Europe — levier de marge important</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pestel-item pestel-S reveal">
+                <div class="pestel-letter">S</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Socioculturel</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Lingerie visible en hausse de +19% — tendance de fond légitimant le positionnement</div>
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Revendication de l'inclusivité comme standard — plus un différenciateur, une exigence</div>
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Consommatrice 25-35 ans rejetant le marketing condescendant — terrain naturel Admensura</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pestel-item pestel-Te reveal">
+                <div class="pestel-letter">T</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Technologique</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>TikTok Shop et Drop culture — mécanique idéale pour créer rareté et urgence d'achat</div>
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Shopify : infrastructure e-commerce accessible et scalable sans développeur</div>
+                        <div class="pestel-point"><span class="tag-risk">RISK</span>Algorithmes imprévisibles — visibilité organique non garantie sur le long terme</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pestel-item pestel-En reveal">
+                <div class="pestel-letter">E</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Environnemental</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Modèle drop limité = moins de surproduction — argument différenciant face au fast fashion</div>
+                        <div class="pestel-point"><span class="tag-neutral">INF</span>Matières naturelles privilégiées à terme — opportunité de positionnement</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pestel-item pestel-L reveal">
+                <div class="pestel-letter">L</div>
+                <div class="pestel-content">
+                    <div class="pestel-title">Légal</div>
+                    <div class="pestel-points">
+                        <div class="pestel-point"><span class="tag-opp">OPP</span>Dépôt INPI — protection nom + logo pour 10 ans, action prioritaire avant tout lancement public</div>
+                        <div class="pestel-point"><span class="tag-neutral">INF</span>RGPD obligatoire — politique de confidentialité et cookies à rédiger avant ouverture du site</div>
+                        <div class="pestel-point"><span class="tag-risk">RISK</span>Contrefaçon — un design viral est copié en quelques semaines, d'où l'urgence du dépôt INPI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 03 PRODUIT -->
+        <div class="chapter" id="produit">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(232,102,10,.4);color:#E8660A">03</span><span class="section-name">Produit & Fabrication</span></div>
+            <h2 class="chapter-title reveal">Saison 1 —<br><em>Le Modèle Signature</em></h2>
+            <div class="two-col reveal">
+                <div>
+                    <table class="dtable">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Fiche Technique — ADM-S1-001</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Référence</td>
+                                <td>ADM-S1-001</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Ensemble 2 pièces — Bralette + Shorty</td>
+                            </tr>
+                            <tr>
+                                <td>Matière principale</td>
+                                <td>Tulle polyamide/élasthanne 80/20 — léger, résistant</td>
+                            </tr>
+                            <tr>
+                                <td>Doublure bonnet</td>
+                                <td>Marquisette lingerie — maintien sans armature ni mousse</td>
+                            </tr>
+                            <tr>
+                                <td>Broderie signature</td>
+                                <td>Soleils creux (broderie machine) + Cercles (impression thermique)</td>
+                            </tr>
+                            <tr>
+                                <td>Dos bralette</td>
+                                <td>Bretelles croisées — détail architectural signature</td>
+                            </tr>
+                            <tr>
+                                <td>Fil détail</td>
+                                <td>Fil effet string identique au tracé du logo</td>
+                            </tr>
+                            <tr>
+                                <td>Finitions</td>
+                                <td>Régleurs métal assortis, surpiqûre fil coloris, ourlets fins</td>
+                            </tr>
+                            <tr>
+                                <td>Fermeture</td>
+                                <td>Agrafes dos 2 positions minimum</td>
+                            </tr>
+                            <tr>
+                                <td>Tailles</td>
+                                <td>Bonnet A → E / Tour de poitrine 80 → 100 cm</td>
+                            </tr>
+                            <tr>
+                                <td style="color:var(--or);font-weight:700">Prix de vente</td>
+                                <td style="color:var(--or);font-weight:700">120 € l'ensemble TTC</td>
+                            </tr>
+                            <tr>
+                                <td>Coût production cible</td>
+                                <td>30 € l'ensemble</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div class="coloris-cards">
+                        <div class="coloris-card or">
+                            <div class="coloris-dot"></div>
+                            <div class="coloris-name">Or / Caramel</div>
+                            <div class="coloris-tagline">La diva. Celle qui entre dans la pièce et qui le sait.</div>
+                            <p class="card-text" style="font-size:11px">Tulle or chaud · Broderie rouge/orangé · Fil satin doré · Régleurs métal doré</p>
+                        </div>
+                        <div class="coloris-card vert">
+                            <div class="coloris-dot"></div>
+                            <div class="coloris-name">Vert Sauge</div>
+                            <div class="coloris-tagline">La rêveuse. Ce qu'elle est vraiment, quand personne ne regarde.</div>
+                            <p class="card-text" style="font-size:11px">Tulle vert sauge · Broderie vert foncé · Fil satin vert · Régleurs argentés</p>
+                        </div>
+                    </div>
+                    <div class="hl-box">
+                        <p><strong>Philosophie produit :</strong> Deux femmes, une même pièce. Deux facettes d'une même personne. Admensura ne choisit pas entre la lumière et l'ombre — elle célèbre les deux.</p>
+                    </div>
+                    <div class="hl-box">
+                        <p><strong>Plan tailles :</strong> Bonnet A→E au lancement (Drop 1 et 2). Extension bonnet F selon retours Drop 1. Extension jusqu'au bonnet G visée en 2027.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-title reveal">Fabrication — Partenariat Maroc</div>
+            <div class="hl-box reveal">
+                <p>Le choix du Maroc repose sur un double engagement : un savoir-faire textile reconnu et sous-estimé par les marchés occidentaux, et une indépendance financière qui permet à Admensura de rester une marque libre, sans investisseurs, sans compromis. Artisan lingerie fine spécialisé — à sélectionner juin 2026.</p>
+            </div>
+            <div class="sub-title reveal">Emails de prospection artisan</div>
+            <div class="card reveal" style="margin-bottom:16px">
+                <div class="card-label" style="color:var(--or)">Version française — Objet : Projet de collaboration — Lingerie premium / Petite série</div>
+                <p class="body-small" style="white-space:pre-line;margin-top:10px">Bonjour,
+
+                    Je me permets de vous contacter dans le cadre du lancement d'Admensura, une marque de lingerie premium française en cours de création.
+
+                    Notre premier modèle est une bralette et un shorty en tulle, avec des broderies signature (motifs soleil et cercles en deux fils de couleur), un bonnet doublé d'un tulle plus rigide pour le maintien, et des bretelles croisées dans le dos. Nous lançons deux coloris : or/caramel et vert sauge.
+
+                    Nous recherchons un partenaire de fabrication sérieux et expert en lingerie fine pour produire deux petites séries dans un premier temps, avec une perspective de collaboration long terme.
+
+                    Pourriez-vous me communiquer :
+                    — Une fourchette de prix par ensemble (bralette + shorty) selon la complexité de la broderie
+                    — Votre quantité minimum de commande par coloris
+                    — Vos délais de production habituels
+
+                    [Votre prénom] — Fondatrice, Admensura</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-label" style="color:var(--or)">English version — Subject: Production Inquiry — Premium Lingerie / Small Series</div>
+                <p class="body-small" style="white-space:pre-line;margin-top:10px">Hello,
+
+                    I am reaching out regarding the launch of Admensura, a French premium lingerie brand currently in development.
+
+                    Our first model consists of a bralette and a shorty in tulle fabric, featuring signature embroidery (sun and circle motifs in two thread colors), a double-layered cup with a firmer tulle lining for support, and crossed back straps. We are launching two colorways: gold/caramel and sage green.
+
+                    We are looking for an experienced lingerie manufacturer for two small initial runs, with a long-term partnership perspective.
+
+                    Could you please share:
+                    — A price range per set depending on embroidery complexity
+                    — Your minimum order quantity per colorway
+                    — Your standard production lead times
+
+                    [Your first name] — Founder, Admensura</p>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 04 MARQUE -->
+        <div class="chapter" id="marque">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(196,160,208,.3);color:var(--purple-l)">04</span><span class="section-name">Identité Visuelle & Marque</span></div>
+            <h2 class="chapter-title reveal">La <em>DA</em><br>Admensura</h2>
+            <div class="sub-title reveal">Palette chromatique</div>
+            <div class="palette-row reveal">
+                <div class="swatch" style="background:#C23B00">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Fire</div>
+                        <div class="swatch-hex">#C23B00</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#E8660A">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Ember</div>
+                        <div class="swatch-hex">#E8660A</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#D4920A">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Gold</div>
+                        <div class="swatch-hex">#D4920A</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#5C1A6B">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Viola</div>
+                        <div class="swatch-hex">#5C1A6B</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#5A7A5A">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Sage</div>
+                        <div class="swatch-hex">#5A7A5A</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#0E0808">
+                    <div class="swatch-inner">
+                        <div class="swatch-name">Ink</div>
+                        <div class="swatch-hex">#0E0808</div>
+                    </div>
+                </div>
+                <div class="swatch" style="background:#FDF6EC">
+                    <div class="swatch-inner" style="background:linear-gradient(to top,rgba(0,0,0,.28) 0%,transparent 60%)">
+                        <div class="swatch-name" style="color:#2a1a1a">Cream</div>
+                        <div class="swatch-hex" style="color:rgba(0,0,0,.35)">#FDF6EC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="two-col reveal">
+                <div>
+                    <div class="sub-title">Typographie Display</div>
+                    <p style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:var(--cream);line-height:1;margin-bottom:6px">Cormorant Garamond</p>
+                    <p class="italic-note">Élégance, corps, profondeur. Le serif qui respire et qui ressent.</p>
+                </div>
+                <div>
+                    <div class="sub-title">Typographie Corps</div>
+                    <p style="font-size:22px;font-weight:500;letter-spacing:2px;color:var(--cream);margin-bottom:6px">Epilogue</p>
+                    <p class="italic-note">Moderne, lisible, avec du caractère. Là où le serif rêve, le sans-serif exécute.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Règles logo — Déclinaisons fond</div>
+            <div class="four-col reveal">
+                <div style="aspect-ratio:4/3;background:var(--ink);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.06)"><span style="font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:6px;color:var(--cream)">ADMENSURA</span></div>
+                <div style="aspect-ratio:4/3;background:var(--cream);display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.08)"><span style="font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:6px;color:var(--ink)">ADMENSURA</span></div>
+                <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#1A0500,#2A0800);display:flex;align-items:center;justify-content:center"><span style="font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:6px;color:var(--or)">ADMENSURA</span></div>
+                <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#1A001F,#2A0030);display:flex;align-items:center;justify-content:center"><span style="font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:6px;color:var(--purple-l)">ADMENSURA</span></div>
+            </div>
+            <div class="three-col reveal" style="margin-top:8px">
+                <div class="card">
+                    <div class="card-label" style="color:#E8660A">Zone de protection</div>
+                    <p class="card-text">Toujours laisser un espace équivalent à la hauteur du "A" autour du logo. Jamais compressé, jamais étiré.</p>
+                </div>
+                <div class="card">
+                    <div class="card-label" style="color:#E8660A">Taille minimale</div>
+                    <p class="card-text">120px minimum en digital, 25mm en print. En dessous, utiliser le monogramme "A".</p>
+                </div>
+                <div class="card">
+                    <div class="card-label" style="color:#E8660A">Interdits absolus</div>
+                    <p class="card-text">Pas de rotation. Pas d'ombre portée. Pas de couleurs hors palette. Pas de fond texturé.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 05 ÉDITORIAL -->
+        <div class="chapter" id="editorial">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(225,48,108,.35);color:#E1306C">05</span><span class="section-name">Ligne Éditoriale</span></div>
+            <h2 class="chapter-title reveal">Dire les bonnes choses.<br><em>Au bon endroit.</em></h2>
+            <div style="margin-bottom:20px" class="reveal">
+                <span class="platform-pill pp-ig"><span class="pp-dot"></span>Instagram — Vitrine & Âme</span>
+                <span class="platform-pill pp-tk"><span class="pp-dot"></span>TikTok — Viralité & Coulisses</span>
+                <span class="platform-pill pp-sn"><span class="pp-dot"></span>Snapchat — Intimité & Drop</span>
+            </div>
+            <div class="sub-title reveal">Les 4 piliers éditoriaux</div>
+            <div class="four-col reveal">
+                <div class="card" style="border-top:3px solid var(--or)">
+                    <div class="card-label" style="color:var(--or)">01 — Produit</div>
+                    <p class="card-text">Montrer la pièce pour la faire désirer. La matière, la broderie en gros plan, le tombé sur le corps. On vend une expérience sensorielle.</p>
+                </div>
+                <div class="card" style="border-top:3px solid #E8660A">
+                    <div class="card-label" style="color:#E8660A">02 — Univers</div>
+                    <p class="card-text">L'ADN Admensura au-delà du produit. Moodboards, citations manifeste, références culturelles. Crée le désir d'appartenir.</p>
+                </div>
+                <div class="card" style="border-top:3px solid var(--purple-l)">
+                    <div class="card-label" style="color:var(--purple-l)">03 — Coulisses</div>
+                    <p class="card-text">La fondatrice qui crée Admensura. Le processus, les décisions, Casablanca. Humanise la marque, crée une connexion impossible à fabriquer.</p>
+                </div>
+                <div class="card" style="border-top:3px solid var(--sage-l)">
+                    <div class="card-label" style="color:var(--sage-l)">04 — Communauté</div>
+                    <p class="card-text">Impliquer la future communauté. Sondages, questions, réactions. Après : reposts clientes, témoignages, UGC.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Ton de marque</div>
+            <div class="hl-box reveal">
+                <p>Admensura parle comme une grande sœur qui te connaît et qui t'aime. <strong>Affirmé</strong> — on dit les choses clairement, pas de détours. <strong>Bienveillant</strong> — on reconnaît, on célèbre. <strong>Poétique</strong> — on choisit les mots comme on choisit les tissus.</p>
+            </div>
+            <div class="two-col reveal">
+                <div class="card vert">
+                    <div class="card-label">On dit</div>
+                    <ul class="blist" style="margin-top:8px">
+                        <li>"Tu savais déjà. On t'a juste trouvé la pièce."</li>
+                        <li>"100 pièces. Pour celles qui savent pourquoi."</li>
+                        <li>"Fait à la main. Pensé pour toi — la vraie toi."</li>
+                        <li>"Sous le tissu, c'est déjà toi qui décidais."</li>
+                    </ul>
+                </div>
+                <div class="card rouge">
+                    <div class="card-label">Jamais</div>
+                    <ul class="blist" style="margin-top:8px">
+                        <li>"Toutes les femmes sont belles !" — vide, générique</li>
+                        <li>"Pour vous sentir bien dans votre peau." — présuppose un malaise</li>
+                        <li>Emojis coeurs, tons rose bonbon, langage "girl boss"</li>
+                        <li>S'excuser d'être premium ou justifier le prix</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-title reveal">Stratégie par réseau</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Canal</th>
+                        <th>Rôle</th>
+                        <th>Format principal</th>
+                        <th>Fréquence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>Vitrine premium — feed éditorial, identité visuelle</td>
+                        <td>Posts photo, Reels 15-30s, Stories</td>
+                        <td>2-3 posts + 4-5 stories / semaine</td>
+                    </tr>
+                    <tr>
+                        <td>TikTok</td>
+                        <td>Moteur de croissance organique — coulisses, fondatrice</td>
+                        <td>Vidéos 15-45s, séries fondatrice</td>
+                        <td>2-3 vidéos / semaine</td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat</td>
+                        <td>Canal intime — accès exclusif aux drops, avant-première</td>
+                        <td>Stories, snaps exclusifs</td>
+                        <td>Quotidien · Drops en avant-première</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Hashtags strategy</div>
+            <div class="reveal" style="margin-bottom:8px">
+                <div style="font-size:8px;letter-spacing:3px;color:var(--or);text-transform:uppercase;margin-bottom:8px">Tags de marque</div><span class="htag core">#admensura</span><span class="htag core">#admensuralingerie</span><span class="htag core">#drop1admensura</span>
+            </div>
+            <div class="reveal" style="margin-bottom:8px">
+                <div style="font-size:8px;letter-spacing:3px;color:#E8660A;text-transform:uppercase;margin-bottom:8px">Mode & lingerie</div><span class="htag mode">#lingerie</span><span class="htag mode">#lingeriefrancaise</span><span class="htag mode">#bralette</span><span class="htag mode">#modefrancaise</span><span class="htag mode">#frenchlingerie</span><span class="htag mode">#limitededition</span><span class="htag mode">#luxeaccessible</span>
+            </div>
+            <div class="reveal">
+                <div style="font-size:8px;letter-spacing:3px;color:var(--dust);text-transform:uppercase;margin-bottom:8px">Niche & communauté</div><span class="htag niche">#inclusivelingerie</span><span class="htag niche">#grandsbonnets</span><span class="htag niche">#dropalert</span><span class="htag niche">#marqueindependante</span><span class="htag niche">#womenowned</span><span class="htag niche">#entrepreneurefrancaise</span>
+            </div>
+            <div class="sub-title reveal" style="margin-top:24px">Exemples de captions</div>
+            <div class="reveal">
+                <div class="voice-ex good">
+                    <div class="voice-ex-tag">Instagram — Lancement</div>
+                    <div class="voice-ex-text">"Admensura arrive bientôt. Pour celles qui savaient déjà."</div>
+                </div>
+                <div class="voice-ex good">
+                    <div class="voice-ex-tag">Instagram — Drop 1</div>
+                    <div class="voice-ex-text">"Tulle. Broderie soleil. Bretelles croisées. Drop 1 — 100 pièces. Vendredi. 20h."</div>
+                </div>
+                <div class="voice-ex good">
+                    <div class="voice-ex-tag">Instagram — Manifeste</div>
+                    <div class="voice-ex-text">"Elle s'habille à 7h du matin. Personne ne le verra. C'est exactement pour ça."</div>
+                </div>
+                <div class="voice-ex good">
+                    <div class="voice-ex-tag">TikTok — Accroche fondatrice</div>
+                    <div class="voice-ex-text">"J'ai créé une lingerie que personne ne propose encore en France — et voilà pourquoi ça m'a pris 6 mois"</div>
+                </div>
+                <div class="voice-ex good">
+                    <div class="voice-ex-tag">Snapchat — J-1</div>
+                    <div class="voice-ex-text">"demain 20h. vous savez ce que c'est. lien en story dès l'ouverture"</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 06 LANCEMENT -->
+        <div class="chapter" id="lancement">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--or-l)">06</span><span class="section-name">Stratégie de Lancement</span></div>
+            <h2 class="chapter-title reveal">Drop 1.<br><em>5 septembre 2026.</em></h2>
+            <p class="chapter-intro reveal">La timeline complète de J-30 à J+7 — chaque action, chaque post, chaque moment clé.</p>
+            <div class="kpi-strip cols-4 reveal">
+                <div class="kpi gold">
+                    <div class="kpi-val">5 Sept</div>
+                    <div class="kpi-label">Jour du Drop</div>
+                    <div class="kpi-sub">Vendredi 20h00</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">100 u</div>
+                    <div class="kpi-label">Pièces disponibles</div>
+                    <div class="kpi-sub">Série limitée</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">4</div>
+                    <div class="kpi-label">Phases de lancement</div>
+                </div>
+                <div class="kpi gold">
+                    <div class="kpi-val">29 u</div>
+                    <div class="kpi-label">Break-even drop 1</div>
+                </div>
+            </div>
+            <div class="sub-title reveal">Phase 1 — Construction (J-30 à J-15)</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Période</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>J-30</td>
+                        <td>Dépôt INPI · Déclaration AE · Création comptes réseaux · admensura.com</td>
+                    </tr>
+                    <tr>
+                        <td>J-21 — Casablanca</td>
+                        <td>Shooting éditorial (80+ photos) · Contrôle qualité 100 pièces · Tournage rushs TikTok · Paiement solde fabricant</td>
+                    </tr>
+                    <tr>
+                        <td>J-18 — Retour France</td>
+                        <td>Premier post Instagram · TikTok fondatrice épisode 1</td>
+                    </tr>
+                    <tr>
+                        <td>J-15</td>
+                        <td>Site Shopify en ligne (coming soon) · CGV + mentions légales publiées</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Phase 2 — Teasing (J-14 à J-2)</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Timing</th>
+                        <th>Contenu</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>J-14</td>
+                        <td>Annonce officielle de la date sur tous les réseaux</td>
+                        <td>Activer le compte à rebours</td>
+                    </tr>
+                    <tr>
+                        <td>J-12</td>
+                        <td>Révélation coloris Or/Caramel</td>
+                        <td>Premier teasing produit</td>
+                    </tr>
+                    <tr>
+                        <td>J-10</td>
+                        <td>TikTok coulisses fabrication Casablanca</td>
+                        <td>Créer la confiance et l'attachement</td>
+                    </tr>
+                    <tr>
+                        <td>J-8</td>
+                        <td>Révélation coloris Vert Sauge</td>
+                        <td>Créer le choix de camp</td>
+                    </tr>
+                    <tr>
+                        <td>J-6</td>
+                        <td>Premier Reel silhouette — contre-jour, mouvement</td>
+                        <td>Désirer sans tout montrer</td>
+                    </tr>
+                    <tr>
+                        <td>J-4</td>
+                        <td>TikTok fondatrice "Pourquoi 100 pièces seulement"</td>
+                        <td>Rareté perçue, transparence = confiance</td>
+                    </tr>
+                    <tr>
+                        <td>J-2</td>
+                        <td>Photo officielle produit complète</td>
+                        <td>Grand dévoilement</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Phase 3 — Drop Day (5 septembre)</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Heure</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>18h00</td>
+                        <td>Stories IG "Dans 2h"</td>
+                    </tr>
+                    <tr>
+                        <td>19h30</td>
+                        <td>Snap exclusif aux abonnés fidèles + lien en avant-première</td>
+                    </tr>
+                    <tr>
+                        <td>20h00</td>
+                        <td>Shopify ouvert · Lien bio IG activé · Post feed "C'est maintenant." · TikTok live si possible</td>
+                    </tr>
+                    <tr>
+                        <td>20h → 23h</td>
+                        <td>Stories stock en temps réel — "75 pièces restantes", "50", "25"</td>
+                    </tr>
+                    <tr>
+                        <td>23h</td>
+                        <td>Story bilan + gratitude</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Phase 4 — Après (J+1 à J+7)</div>
+            <div class="two-col reveal">
+                <div class="card or">
+                    <div class="card-label">J+1 à J+2</div>
+                    <p class="card-text">Post gratitude · TikTok bilan drop honnête · Fermeture officielle si not sold-out · Gestion DMs</p>
+                </div>
+                <div class="card or">
+                    <div class="card-label">J+3 à J+7</div>
+                    <p class="card-text">Préparation colis · Expéditions · Stories unboxing · Repost UGC premières clientes · Bilan financier</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Plan de développement — Horizons</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Horizon</th>
+                        <th>Phase</th>
+                        <th>Objectifs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S1 2026</td>
+                        <td>Lancement</td>
+                        <td>Drop 1 (100 u, modèle signature, 2 coloris). Validation du marché. Break-even : 29 unités.</td>
+                    </tr>
+                    <tr>
+                        <td>S2 2026</td>
+                        <td>Consolidation</td>
+                        <td>Drop 2 + lancement 1 à 2 nouveaux modèles en édition limitée. Extension bonnet F selon retours clientes.</td>
+                    </tr>
+                    <tr>
+                        <td>An 2 — 2027 S1</td>
+                        <td>Montée en gamme</td>
+                        <td>Drops volume doublé (200 u / drop). Catalogue 3-4 modèles actifs. Dépôt EUIPO envisagé.</td>
+                    </tr>
+                    <tr>
+                        <td>An 2 — 2027 S2</td>
+                        <td>Scaling</td>
+                        <td>4 modèles au catalogue, drops ×2 en volume. Extension tailles bonnet G. 400-500 unités/an.</td>
+                    </tr>
+                    <tr>
+                        <td>An 3 — 2028</td>
+                        <td>Structuration</td>
+                        <td>Diversification fabricants. Potentielle SASU selon CA. 600+ unités/an.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 07 JURIDIQUE -->
+        <div class="chapter" id="juridique">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(143,175,143,.35);color:var(--sage-l)">07</span><span class="section-name">Structure Juridique</span></div>
+            <h2 class="chapter-title reveal">Construire<br><em>proprement</em></h2>
+            <div class="kpi-strip cols-4 reveal">
+                <div class="kpi vert">
+                    <div class="kpi-val">AE</div>
+                    <div class="kpi-label">Statut recommandé</div>
+                </div>
+                <div class="kpi vert">
+                    <div class="kpi-val">0 €</div>
+                    <div class="kpi-label">Création auto-entreprise</div>
+                </div>
+                <div class="kpi vert">
+                    <div class="kpi-val">~560 €</div>
+                    <div class="kpi-label">Budget juridique total</div>
+                </div>
+                <div class="kpi vert">
+                    <div class="kpi-val">J-60</div>
+                    <div class="kpi-label">Démarrer ces démarches</div>
+                </div>
+            </div>
+            <div class="sub-title reveal">Statut : Micro-entreprise</div>
+            <div class="hl-box vert reveal">
+                <p>Structure la plus adaptée : lancement solo, budget serré, ventes e-commerce, pas de salarié. <strong>Zéro frais de création</strong>, comptabilité simplifiée, plafond CA 188 700 €/an. Cumulable avec emploi salarié et formation.</p>
+            </div>
+            <div class="sub-title reveal">Démarches dans l'ordre</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Étape</th>
+                        <th>Action</th>
+                        <th>Délai</th>
+                        <th>Coût</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 — Urgent</td>
+                        <td>Dépôt INPI Classes 25 + 35 (après recherche antériorité sur bases-marques.inpi.fr)</td>
+                        <td>~30 min</td>
+                        <td>267 €</td>
+                    </tr>
+                    <tr>
+                        <td>2 — Maintenant</td>
+                        <td>Déclaration AE sur autoentrepreneur.urssaf.fr</td>
+                        <td>~15 min</td>
+                        <td>0 €</td>
+                    </tr>
+                    <tr>
+                        <td>3 — Dès SIRET</td>
+                        <td>Compte bancaire pro (Shine, Qonto ou Revolut)</td>
+                        <td>~30 min</td>
+                        <td>0–29 €/an</td>
+                    </tr>
+                    <tr>
+                        <td>4 — Avant lancement</td>
+                        <td>admensura.com · Shopify · CGV + Mentions légales + RGPD</td>
+                        <td>2-3h</td>
+                        <td>~109 €</td>
+                    </tr>
+                    <tr>
+                        <td>5 — Recommandé</td>
+                        <td>RC Pro (Hiscox, AXA, Maaf)</td>
+                        <td>~30 min</td>
+                        <td>150–400 €/an</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="two-col reveal">
+                <div class="card purple">
+                    <div class="card-label">Classe 25</div>
+                    <div class="card-title">Vêtements & Lingerie</div>
+                    <p class="card-text">Couvre la lingerie, sous-vêtements, bralettes, shorties — classe principale indispensable.</p>
+                </div>
+                <div class="card purple">
+                    <div class="card-label">Classe 35</div>
+                    <div class="card-title">Commerce en ligne & Retail</div>
+                    <p class="card-text">Couvre la vente par internet, e-commerce, réseaux sociaux marchands.</p>
+                </div>
+            </div>
+            <div class="sub-title reveal">Légal site — Obligations</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Document</th>
+                        <th>Statut</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mentions légales</td>
+                        <td style="color:var(--rm);font-weight:600">Obligatoire</td>
+                        <td>Shopify génère automatiquement</td>
+                    </tr>
+                    <tr>
+                        <td>CGV</td>
+                        <td style="color:var(--rm);font-weight:600">Obligatoire</td>
+                        <td>Template Shopify ou cgv-facile.fr</td>
+                    </tr>
+                    <tr>
+                        <td>Politique RGPD</td>
+                        <td style="color:var(--rm);font-weight:600">Obligatoire</td>
+                        <td>Générateur Shopify ou iubenda.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bandeau cookies</td>
+                        <td style="color:var(--or);font-weight:600">Recommandé</td>
+                        <td>App Shopify gratuite</td>
+                    </tr>
+                    <tr>
+                        <td>Page FAQ</td>
+                        <td style="color:var(--dust)">Optionnel</td>
+                        <td>Réduit les DMs SAV</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Budget juridique</div>
+            <table class="dtable reveal" style="max-width:500px">
+                <thead>
+                    <tr>
+                        <th>Poste</th>
+                        <th>Montant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Création auto-entreprise</td>
+                        <td style="color:var(--green-l)">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Dépôt INPI — 2 classes</td>
+                        <td>267 €</td>
+                    </tr>
+                    <tr>
+                        <td>Domaine admensura.com</td>
+                        <td>15 €</td>
+                    </tr>
+                    <tr>
+                        <td>CGV & mentions légales</td>
+                        <td>49 €</td>
+                    </tr>
+                    <tr>
+                        <td>RC Pro annuelle</td>
+                        <td>150–400 €</td>
+                    </tr>
+                    <tr>
+                        <td>Compte bancaire pro</td>
+                        <td>0–29 €</td>
+                    </tr>
+                    <tr class="total">
+                        <td>Total juridique estimé</td>
+                        <td>~530–560 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 08 FINANCIER -->
+        <div class="chapter" id="financier">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(45,122,79,.4);color:var(--green)">08</span><span class="section-name">Prévisionnel Financier</span></div>
+            <h2 class="chapter-title reveal">Les <em>chiffres</em></h2>
+            <div class="kpi-strip cols-4 reveal">
+                <div class="kpi gold">
+                    <div class="kpi-val">120 €</div>
+                    <div class="kpi-label">Prix de vente HT</div>
+                </div>
+                <div class="kpi rouge">
+                    <div class="kpi-val">30 €</div>
+                    <div class="kpi-label">Coût de production</div>
+                </div>
+                <div class="kpi vert">
+                    <div class="kpi-val">90 €</div>
+                    <div class="kpi-label">Marge brute unitaire</div>
+                    <div class="kpi-sub">75%</div>
+                </div>
+                <div class="kpi">
+                    <div class="kpi-val" style="color:var(--dust)">100 u</div>
+                    <div class="kpi-label">Stock lancement</div>
+                </div>
+            </div>
+            <div class="two-col reveal">
+                <div>
+                    <div class="sub-title">Coûts variables / unité</div>
+                    <table class="dtable">
+                        <thead>
+                            <tr>
+                                <th>Poste</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Emballage</td>
+                                <td>1,20 €</td>
+                            </tr>
+                            <tr>
+                                <td>Livraison Colissimo</td>
+                                <td>5,50 €</td>
+                            </tr>
+                            <tr>
+                                <td>Retours estimés (8%)</td>
+                                <td>0,32 €</td>
+                            </tr>
+                            <tr>
+                                <td>Commission Stripe</td>
+                                <td>1,93 €</td>
+                            </tr>
+                            <tr class="total">
+                                <td>Total CV / unité</td>
+                                <td>8,95 €</td>
+                            </tr>
+                            <tr class="total">
+                                <td>Marge nette / pièce</td>
+                                <td style="color:var(--green-l)">81,05 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div class="sub-title">Charges fixes annuelles</div>
+                    <table class="dtable">
+                        <thead>
+                            <tr>
+                                <th>Poste</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shopify</td>
+                                <td>360 €</td>
+                            </tr>
+                            <tr>
+                                <td>INPI (an 1)</td>
+                                <td>267 €</td>
+                            </tr>
+                            <tr>
+                                <td>Shooting Casablanca</td>
+                                <td>500 €</td>
+                            </tr>
+                            <tr>
+                                <td>Domaine + email</td>
+                                <td>80 €</td>
+                            </tr>
+                            <tr>
+                                <td>Emballages base</td>
+                                <td>150 €</td>
+                            </tr>
+                            <tr>
+                                <td>Comptabilité</td>
+                                <td>400 €</td>
+                            </tr>
+                            <tr>
+                                <td>Budget publicité</td>
+                                <td>600 €</td>
+                            </tr>
+                            <tr class="total">
+                                <td>Total fixes</td>
+                                <td>2 357 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sub-title reveal">Seuil de rentabilité</div>
+            <div class="be-callout reveal">
+                <p>Avec une marge nette de <strong>81,05 €</strong> / pièce et des charges fixes de <strong>2 357 €</strong>, le seuil de rentabilité est atteint à <strong>29 pièces vendues</strong> — soit 29% du stock Drop 1. Si les 100 pièces sont vendues : résultat net estimé <strong style="color:var(--green-l)">+5 785 €</strong>.</p>
+            </div>
+            <div class="sub-title reveal">Projections annuelles — 3 scénarios</div>
+            <table class="dtable reveal">
+                <thead>
+                    <tr>
+                        <th>Scénario</th>
+                        <th>Description</th>
+                        <th>Ventes an 1</th>
+                        <th>CA HT</th>
+                        <th>Résultat net</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color:#8B1A1A;font-weight:600">Pessimiste</td>
+                        <td>Drop 1 timide, 0 viralité</td>
+                        <td>90 u</td>
+                        <td>10 800 €</td>
+                        <td style="color:#8B1A1A">-1 190 €</td>
+                    </tr>
+                    <tr>
+                        <td style="color:var(--or);font-weight:600">Réaliste</td>
+                        <td>Drop 1 solide, 1-2 posts viraux</td>
+                        <td>188 u</td>
+                        <td>22 560 €</td>
+                        <td style="color:var(--green-l)">+8 098 €</td>
+                    </tr>
+                    <tr>
+                        <td style="color:var(--green);font-weight:600">Optimiste</td>
+                        <td>Viral TikTok, presse, sold-out</td>
+                        <td>418 u</td>
+                        <td>50 160 €</td>
+                        <td style="color:var(--green-l)">+28 220 €</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sub-title reveal">Budget de lancement — 5 000 €</div>
+            <table class="dtable reveal" style="max-width:560px">
+                <thead>
+                    <tr>
+                        <th>Poste</th>
+                        <th>Montant</th>
+                        <th>Financement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Production 100 ensembles</td>
+                        <td>3 000 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing & publicité</td>
+                        <td>600 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr>
+                        <td>Shooting Casablanca</td>
+                        <td>500 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr>
+                        <td>Frais juridiques</td>
+                        <td>316 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure digitale</td>
+                        <td>440 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr>
+                        <td>Emballages & logistique</td>
+                        <td>150 €</td>
+                        <td>Fonds propres</td>
+                    </tr>
+                    <tr class="total">
+                        <td>Total lancement</td>
+                        <td>5 006 €</td>
+                        <td>100% autofinancé</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 09 ROADMAP -->
+        <div class="chapter" id="roadmap">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--aout)">09</span><span class="section-name">Fiche de Route</span></div>
+            <h2 class="chapter-title reveal">La route vers<br>le <em>Drop 1.</em></h2>
+            <p class="chapter-intro reveal">De la première démarche administrative au premier colis expédié — tout, dans l'ordre, semaine par semaine.</p>
+
+            <div class="month-bar reveal">
+                <div class="mbar juin" onclick="document.getElementById('r-juin').scrollIntoView({behavior:'smooth'})">
+                    <div class="mbar-name">Juin</div>
+                    <div class="mbar-focus">Fondations admin · Artisan</div>
+                </div>
+                <div class="mbar juil" onclick="document.getElementById('r-juil').scrollIntoView({behavior:'smooth'})">
+                    <div class="mbar-name">Juillet</div>
+                    <div class="mbar-focus">Prototype · Site · Corrections</div>
+                </div>
+                <div class="mbar aout" onclick="document.getElementById('r-aout').scrollIntoView({behavior:'smooth'})">
+                    <div class="mbar-name">Août</div>
+                    <div class="mbar-focus">Casablanca · Shooting · Teasing</div>
+                </div>
+                <div class="mbar sept" onclick="document.getElementById('r-sept').scrollIntoView({behavior:'smooth'})">
+                    <div class="mbar-name">Septembre</div>
+                    <div class="mbar-focus">Drop 1 · Expéditions · Bilan</div>
+                </div>
+            </div>
+
+            <div id="r-juin" style="scroll-margin-top:80px">
+                <div class="sub-title reveal" style="color:var(--juin)">Juin 2026 — Fondations</div>
+                <div class="semaines reveal">
+                    <div class="semaine-row">
+                        <div class="sem-label crit">
+                            <div class="sem-num">S1</div>
+                            <div class="sem-dates">2–8 juin</div>
+                        </div>
+                        <div class="sem-content crit">
+                            <div class="sem-title">Semaine juridique — Priorité absolue</div>
+                            <div class="sem-tasks"><span class="stask admin">Recherche INPI</span><span class="stask admin">Dépôt INPI Classes 25+35</span><span class="stask admin">Déclaration AE URSSAF</span><span class="stask site">admensura.com</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label key">
+                            <div class="sem-num">S2</div>
+                            <div class="sem-dates">9–15 juin</div>
+                        </div>
+                        <div class="sem-content key">
+                            <div class="sem-title">Recherche artisan Maroc</div>
+                            <div class="sem-tasks"><span class="stask proto">Brief technique illustré</span><span class="stask proto">Contacter 5+ artisans</span><span class="stask admin">Compte bancaire pro</span><span class="stask ig">Créer comptes réseaux</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S3</div>
+                            <div class="sem-dates">16–22 juin</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Prises de contact & devis</div>
+                            <div class="sem-tasks"><span class="stask proto">Brief envoyé à chaque artisan</span><span class="stask proto">Demander échantillons matières</span><span class="stask site">Shopify — création compte</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label mile">
+                            <div class="sem-num">S4</div>
+                            <div class="sem-dates">23–30 juin</div>
+                        </div>
+                        <div class="sem-content mile">
+                            <div class="sem-title">Artisan sélectionné + Prototype commandé</div>
+                            <div class="sem-tasks"><span class="stask proto">Artisan confirmé</span><span class="stask proto">Bon de commande + acompte</span><span class="stask admin">CGV + mentions légales</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="r-juil" style="scroll-margin-top:80px;margin-top:32px">
+                <div class="sub-title reveal" style="color:var(--juil)">Juillet 2026 — Prototype & Site</div>
+                <div class="hl-box purple reveal">
+                    <p>En lingerie, un premier prototype nécessite presque toujours 1 à 2 corrections. Chaque aller-retour prend 1 à 2 semaines — c'est pour ça qu'on dédie tout juillet à cette phase.</p>
+                </div>
+                <div class="semaines reveal">
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S5</div>
+                            <div class="sem-dates">1–6 juil.</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Attente proto V1 + Setup digital</div>
+                            <div class="sem-tasks"><span class="stask proto">Suivi artisan</span><span class="stask site">Shopify thème + page produit masquée</span><span class="stask ig">Highlights Instagram rédigés</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label crit">
+                            <div class="sem-num">S6</div>
+                            <div class="sem-dates">7–13 juil.</div>
+                        </div>
+                        <div class="sem-content crit">
+                            <div class="sem-title">Réception prototype V1 — Le moment de vérité</div>
+                            <div class="sem-tasks"><span class="stask proto">Réception proto V1</span><span class="stask proto">Essayage + évaluation complète</span><span class="stask proto">Brief corrections précis</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S7</div>
+                            <div class="sem-dates">14–20 juil.</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Corrections + Contenu digital</div>
+                            <div class="sem-tasks"><span class="stask proto">Brief corrections envoyé</span><span class="stask site">Stripe configuré</span><span class="stask ig">4-5 posts univers préparés</span><span class="stask tk">Scripts TikTok écrits</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label mile">
+                            <div class="sem-num">S8</div>
+                            <div class="sem-dates">21–31 juil.</div>
+                        </div>
+                        <div class="sem-content mile">
+                            <div class="sem-title">Prototype validé — GO production 100 pièces</div>
+                            <div class="sem-tasks"><span class="stask proto">Proto V2 validé</span><span class="stask prod">Commande 100 pièces lancée</span><span class="stask prod">Acompte 50% versé</span><span class="stask log">Emballages commandés</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="r-aout" style="scroll-margin-top:80px;margin-top:32px">
+                <div class="sub-title reveal" style="color:var(--aout)">Août 2026 — Casablanca & Teasing</div>
+                <div class="semaines reveal">
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S9</div>
+                            <div class="sem-dates">1–10 août</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Production en cours + Préparation voyage</div>
+                            <div class="sem-tasks"><span class="stask prod">Suivi artisan</span><span class="stask prod">Vols + hébergement Casa</span><span class="stask ig">Premier post IG "Admensura arrive"</span><span class="stask tk">TikTok fondatrice épisode 1</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label crit">
+                            <div class="sem-num">S10</div>
+                            <div class="sem-dates">11–20 août</div>
+                        </div>
+                        <div class="sem-content crit">
+                            <div class="sem-title">CASABLANCA — La semaine pivot</div>
+                            <div class="sem-tasks"><span class="stask prod">Contrôle qualité 100 pièces</span><span class="stask prod">Solde 50% versé</span><span class="stask proto">Shooting éditorial 80+ photos</span><span class="stask tk">Tournage rushs TikTok/Reels</span><span class="stask log">Rapatriement France</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label key">
+                            <div class="sem-num">S11</div>
+                            <div class="sem-dates">21–25 août</div>
+                        </div>
+                        <div class="sem-content key">
+                            <div class="sem-title">Retour France — Teasing officiel</div>
+                            <div class="sem-tasks"><span class="stask log">Stock organisé et compté</span><span class="stask ig">Photos sélectionnées + retouchées</span><span class="stask ig">Annonce date drop (22 août)</span><span class="stask ig">Révélation coloris Or (24 août)</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S12</div>
+                            <div class="sem-dates">26–31 août</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Teasing intensif</div>
+                            <div class="sem-tasks"><span class="stask tk">TikTok coulisses (26 août)</span><span class="stask ig">Vert Sauge révélé (28 août)</span><span class="stask ig">Premier Reel silhouette (30 août)</span><span class="stask site">Page produit finalisée</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="r-sept" style="scroll-margin-top:80px;margin-top:32px">
+                <div class="sub-title reveal" style="color:var(--sept)">Septembre 2026 — Drop & Post-Drop</div>
+                <div class="semaines reveal">
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S13</div>
+                            <div class="sem-dates">1–4 sept.</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Compte à rebours final</div>
+                            <div class="sem-tasks"><span class="stask ig">TikTok "Pourquoi 100 pièces" (1er sept)</span><span class="stask ig">Photo officielle produit (3 sept)</span><span class="stask site">Test Shopify complet (4 sept)</span><span class="stask drop">Post "Demain." (4 sept soir)</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label mile">
+                            <div class="sem-num">5 Sept</div>
+                            <div class="sem-dates">Vendredi</div>
+                        </div>
+                        <div class="sem-content mile">
+                            <div class="sem-title">DROP 1 — 20h00</div>
+                            <div class="sem-tasks"><span class="stask drop">18h — Stories "dans 2h"</span><span class="stask drop">19h30 — Snap exclusif abonnés</span><span class="stask drop">20h — Shopify ouvert + lien bio</span><span class="stask drop">20h→23h — Stock live stories</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label key">
+                            <div class="sem-num">S14</div>
+                            <div class="sem-dates">6–12 sept.</div>
+                        </div>
+                        <div class="sem-content key">
+                            <div class="sem-title">Post-drop — Expéditions & Communauté</div>
+                            <div class="sem-tasks"><span class="stask ig">Post gratitude J+1</span><span class="stask tk">TikTok bilan drop J+2</span><span class="stask log">Expéditions colis J+3 à J+5</span><span class="stask ig">Repost UGC premières clientes</span></div>
+                        </div>
+                    </div>
+                    <div class="semaine-row">
+                        <div class="sem-label">
+                            <div class="sem-num">S15</div>
+                            <div class="sem-dates">13–20 sept.</div>
+                        </div>
+                        <div class="sem-content">
+                            <div class="sem-title">Bilan Drop 1 + Vision Drop 2</div>
+                            <div class="sem-tasks"><span class="stask admin">Bilan financier Drop 1</span><span class="stask ig">Analyse performances réseaux</span><span class="stask proto">Réflexion Drop 2 + nouveaux modèles</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-title reveal" style="margin-top:40px">Checklist complète — 60 actions</div>
+            <div class="prog-wrap reveal">
+                <div class="prog-hdr"><span class="prog-title">Progression vers le Drop 1</span><span class="prog-count" id="pc">0 / 60</span></div>
+                <div class="prog-bar">
+                    <div class="prog-fill" id="pf" style="width:0%"></div>
+                </div>
+                <div class="prog-months">
+                    <div class="prog-month">
+                        <div class="prog-month-name" style="color:var(--juin)">Juin</div>
+                        <div class="prog-month-count" id="cj" style="color:var(--juin)">0/15</div>
+                    </div>
+                    <div class="prog-month">
+                        <div class="prog-month-name" style="color:var(--juil)">Juillet</div>
+                        <div class="prog-month-count" id="cjl" style="color:var(--juil)">0/16</div>
+                    </div>
+                    <div class="prog-month">
+                        <div class="prog-month-name" style="color:var(--aout)">Août</div>
+                        <div class="prog-month-count" id="ca" style="color:var(--aout)">0/16</div>
+                    </div>
+                    <div class="prog-month">
+                        <div class="prog-month-name" style="color:var(--sept)">Sept.</div>
+                        <div class="prog-month-count" id="cs" style="color:var(--sept)">0/13</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chk-group open reveal" data-m="juin">
+                <div class="chk-group-hdr" onclick="tg(this.parentElement)">
+                    <div class="chk-dot" style="background:var(--juin)"></div>
+                    <div class="chk-group-title" style="color:var(--juin)">Juin — Fondations & Artisan</div>
+                    <div class="chk-group-count" id="gc-juin">0/15</div>
+                    <div class="chk-group-arrow">▼</div>
+                </div>
+                <div class="chk-items">
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Recherche d'antériorité INPI effectuée</div>
+                        <div class="ctag admin">Urgent</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Dépôt INPI Classe 25 (Lingerie)</div>
+                        <div class="ctag admin">INPI</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Dépôt INPI Classe 35 (E-commerce)</div>
+                        <div class="ctag admin">INPI</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Numéro de dépôt INPI reçu et conservé</div>
+                        <div class="ctag admin">INPI</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Auto-entreprise déclarée sur URSSAF</div>
+                        <div class="ctag admin">Admin</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">SIRET reçu</div>
+                        <div class="ctag admin">Admin</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Compte bancaire pro ouvert</div>
+                        <div class="ctag admin">Admin</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Nom de domaine admensura.com réservé</div>
+                        <div class="ctag site">Site</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Comptes Instagram + TikTok + Snapchat créés</div>
+                        <div class="ctag ig">Réseaux</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Brief technique artisan rédigé</div>
+                        <div class="ctag proto">Proto</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Minimum 5 artisans lingerie Maroc contactés</div>
+                        <div class="ctag proto">Proto</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Devis prototype reçus de plusieurs artisans</div>
+                        <div class="ctag proto">Proto</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Artisan sélectionné et confirmé</div>
+                        <div class="ctag proto">Proto</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Bon de commande prototype signé + acompte versé</div>
+                        <div class="ctag proto">Proto</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juin')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Shopify — compte créé</div>
+                        <div class="ctag site">Site</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chk-group open reveal" data-m="juil">
+                <div class="chk-group-hdr" onclick="tg(this.parentElement)">
+                    <div class="chk-dot" style="background:var(--juil)"></div>
+                    <div class="chk-group-title" style="color:var(--juil)">Juillet — Prototype, Corrections & Site</div>
+                    <div class="chk-group-count" id="gc-juil">0/16</div>
+                    <div class="chk-group-arrow">▼</div>
+                </div>
+                <div class="chk-items">
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Shopify — thème choisi et installé</div>
+                        <div class="ctag site">Site</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Stripe configuré et testé</div>
+                        <div class="ctag site">Paiement</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Page produit créée (masquée)</div>
+                        <div class="ctag site">Site</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">CGV rédigées et publiées sur le site</div>
+                        <div class="ctag admin">Légal</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Mentions légales publiées</div>
+                        <div class="ctag admin">Légal</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Politique de confidentialité RGPD publiée</div>
+                        <div class="ctag admin">Légal</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Prototype V1 reçu</div>
+                        <div class="ctag proto">Proto V1</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Essayage prototype V1 — évaluation complète rédigée</div>
+                        <div class="ctag proto">Proto V1</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Brief corrections envoyé à l'artisan</div>
+                        <div class="ctag proto">Proto V1</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Prototype V2 reçu et validé</div>
+                        <div class="ctag proto">Proto V2</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Commande 100 pièces lancée officiellement</div>
+                        <div class="ctag prod">Production</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Acompte 50% production versé</div>
+                        <div class="ctag prod">Production</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Emballages commandés (pochettes + cartes + papier de soie)</div>
+                        <div class="ctag log">Logistique</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">4-5 posts univers préparés en avance</div>
+                        <div class="ctag ig">Contenu</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Scripts TikTok série fondatrice écrits (3 épisodes min.)</div>
+                        <div class="ctag tk">TikTok</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'juil')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">RC Pro souscrite</div>
+                        <div class="ctag admin">Admin</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chk-group open reveal" data-m="aout">
+                <div class="chk-group-hdr" onclick="tg(this.parentElement)">
+                    <div class="chk-dot" style="background:var(--aout)"></div>
+                    <div class="chk-group-title" style="color:var(--aout)">Août — Casablanca, Shooting & Teasing</div>
+                    <div class="chk-group-count" id="gc-aout">0/16</div>
+                    <div class="chk-group-arrow">▼</div>
+                </div>
+                <div class="chk-items">
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Vols + hébergement Casablanca réservés</div>
+                        <div class="ctag log">Voyage</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Brief shooting préparé (références, ambiances, couleurs)</div>
+                        <div class="ctag proto">Shooting</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Photographe ou modèle Casablanca confirmé(e)</div>
+                        <div class="ctag proto">Shooting</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Premier post Instagram publié début août</div>
+                        <div class="ctag ig">Instagram</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">TikTok fondatrice épisode 1 publié</div>
+                        <div class="ctag tk">TikTok</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Contrôle qualité 100 pièces sur place à Casablanca</div>
+                        <div class="ctag prod">Qualité</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Solde production versé (50% restant)</div>
+                        <div class="ctag prod">Production</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Shooting éditorial réalisé — minimum 80 photos exploitables</div>
+                        <div class="ctag proto">Shooting</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Rushs vidéo TikTok/Reels tournés à Casablanca</div>
+                        <div class="ctag tk">Contenu</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">100 pièces rapatriées en France</div>
+                        <div class="ctag log">Logistique</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Stock organisé et compté (par taille et coloris)</div>
+                        <div class="ctag log">Stock</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Photos shooting sélectionnées et retouchées</div>
+                        <div class="ctag ig">Contenu</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Date drop annoncée sur tous les réseaux (22 août)</div>
+                        <div class="ctag drop">Drop</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Coloris Or révélé (24 août)</div>
+                        <div class="ctag ig">Teasing</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Coloris Vert Sauge révélé (28 août)</div>
+                        <div class="ctag ig">Teasing</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'aout')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Emballages reçus et prêts</div>
+                        <div class="ctag log">Logistique</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chk-group open reveal" data-m="sept">
+                <div class="chk-group-hdr" onclick="tg(this.parentElement)">
+                    <div class="chk-dot" style="background:var(--sept)"></div>
+                    <div class="chk-group-title" style="color:var(--sept)">Septembre — Drop & Post-Drop</div>
+                    <div class="chk-group-count" id="gc-sept">0/13</div>
+                    <div class="chk-group-arrow">▼</div>
+                </div>
+                <div class="chk-items">
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Premier Reel silhouette publié (30 août / 1er sept)</div>
+                        <div class="ctag ig">Reel</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Stories FAQ drop publiées</div>
+                        <div class="ctag ig">Stories</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Page produit Shopify finalisée avec vraies photos</div>
+                        <div class="ctag site">Site</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Photo officielle produit publiée (3 sept)</div>
+                        <div class="ctag ig">Instagram</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Test commande Shopify effectué (4 sept)</div>
+                        <div class="ctag site">Test</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Post "Demain." publié (4 sept soir)</div>
+                        <div class="ctag drop">J-1</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Snap exclusif abonnés fidèles (5 sept 19h30)</div>
+                        <div class="ctag sn">Snap</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Shopify ouvert + lien bio IG activé (5 sept 20h00)</div>
+                        <div class="ctag drop">DROP</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Updates stock en temps réel pendant le drop</div>
+                        <div class="ctag drop">DROP</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Post gratitude publié (J+1)</div>
+                        <div class="ctag ig">Post-drop</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Toutes les commandes expédiées (J+3 à J+5)</div>
+                        <div class="ctag log">Logistique</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">TikTok bilan drop publié (J+2)</div>
+                        <div class="ctag tk">TikTok</div>
+                    </div>
+                    <div class="chk-item" onclick="tc(this,'sept')">
+                        <div class="chk-box">✓</div>
+                        <div class="chk-label">Bilan financier Drop 1 réalisé</div>
+                        <div class="ctag admin">Bilan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <div class="synthese reveal">
+            <div class="synthese-label">Ce qu'il faut retenir</div>
+            <p class="synthese-text">Admensura est un projet entrepreneurial construit sur des fondamentaux solides : <strong>un gap de marché documenté</strong>, une marge brute exceptionnelle (75%), un budget maîtrisé (5 000 €) et un positionnement différenciant. Le modèle financier valide la viabilité dès <strong>29 pièces vendues</strong>. La fondatrice incarne la marque et sa cliente cible — un avantage concurrentiel réel à l'ère du contenu authentique.<br><br><strong>Juin :</strong> Fondations. <strong>Juillet :</strong> Prototype. <strong>Août :</strong> Casablanca. <strong>5 septembre, 20h :</strong> Drop 1. 100 pièces. Pour celles qui savaient déjà.</p>
+        </div>
+
+        <div class="doc-footer">Admensura — Business Plan Complet — 2026 — Document Confidentiel — Tous droits réservés</div>
+    </div>
+
+    <script>
+        const T = {
+            juin: 15,
+            juil: 16,
+            aout: 16,
+            sept: 13
+        };
+        const C = {
+            juin: 0,
+            juil: 0,
+            aout: 0,
+            sept: 0
+        };
+
+        function tc(el, m) {
+            el.classList.toggle('checked');
+            C[m] = document.querySelectorAll('[data-m="' + m + '"] .chk-item.checked').length;
+            upd()
+        }
+
+        function upd() {
+            const d = C.juin + C.juil + C.aout + C.sept;
+            document.getElementById('pc').textContent = d + ' / 60';
+            document.getElementById('pf').style.width = Math.round(d / 60 * 100) + '%';
+            document.getElementById('cj').textContent = C.juin + '/' + T.juin;
+            document.getElementById('cjl').textContent = C.juil + '/' + T.juil;
+            document.getElementById('ca').textContent = C.aout + '/' + T.aout;
+            document.getElementById('cs').textContent = C.sept + '/' + T.sept;
+            document.getElementById('gc-juin').textContent = C.juin + '/' + T.juin;
+            document.getElementById('gc-juil').textContent = C.juil + '/' + T.juil;
+            document.getElementById('gc-aout').textContent = C.aout + '/' + T.aout;
+            document.getElementById('gc-sept').textContent = C.sept + '/' + T.sept
+        }
+
+        function tg(g) {
+            g.classList.toggle('open')
+        }
+        const obs = new IntersectionObserver(es => {
+            es.forEach(e => {
+                if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add('visible'), 50);
+                    obs.unobserve(e.target)
+                }
+            })
+        }, {
+            threshold: .06
+        });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+        upd();
+    </script>
+</body>
+
+</html>
