@@ -1600,6 +1600,61 @@
             .cover h1 {
                 font-size: 52px
             }
+
+            .illus-gallery {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .illus-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-bottom: 24px
+        }
+
+        .illus-frame {
+            position: relative;
+            border: 1px solid rgba(184, 134, 11, .18);
+            background: radial-gradient(circle at 50% 28%, #FFFDF8, #F2E7D4);
+            overflow: hidden
+        }
+
+        .illus-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            mix-blend-mode: multiply
+        }
+
+        .illus-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            font-size: 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            background: rgba(14, 7, 7, .82);
+            color: var(--cream);
+            backdrop-filter: blur(4px)
+        }
+
+        .illus-cap {
+            padding: 14px 2px 0;
+            font-size: 8px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--dust)
+        }
+
+        .illus-cap em {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            letter-spacing: 0;
+            text-transform: none;
+            font-size: 13px;
+            color: rgba(253, 246, 236, .8)
         }
     </style>
 </head>
@@ -1609,7 +1664,7 @@
         <div class="nav-logo">Admensura</div>
         <div class="nav-links">
             <a href="#identite">Identité</a><a href="#marche">Marché</a><a href="#produit">Produit</a>
-            <a href="#marque">Marque & DA</a><a href="#editorial">Éditorial</a><a href="#lancement">Lancement</a>
+            <a href="#marque">Marque & DA</a><a href="#illustrations">Illustrations</a><a href="#editorial">Éditorial</a><a href="#lancement">Lancement</a>
             <a href="#juridique">Juridique</a><a href="#financier">Financier</a><a href="#roadmap">Roadmap</a>
         </div>
         <span class="save-msg" id="saveMsg"></span>
@@ -1664,24 +1719,28 @@
                 <div class="toc-num" style="color:var(--purple-l)">04</div>
                 <div class="toc-name">Identité Visuelle & Marque</div>
             </a>
+            <a class="toc-item" href="#illustrations" style="border-top:2px solid var(--or-l)">
+                <div class="toc-num" style="color:var(--or-l)">05</div>
+                <div class="toc-name">Univers Illustré</div>
+            </a>
             <a class="toc-item" href="#editorial" style="border-top:2px solid #E1306C">
-                <div class="toc-num" style="color:#E1306C">05</div>
+                <div class="toc-num" style="color:#E1306C">06</div>
                 <div class="toc-name">Ligne Éditoriale</div>
             </a>
             <a class="toc-item" href="#lancement" style="border-top:2px solid var(--or-l)">
-                <div class="toc-num" style="color:var(--or-l)">06</div>
+                <div class="toc-num" style="color:var(--or-l)">07</div>
                 <div class="toc-name">Stratégie de Lancement</div>
             </a>
             <a class="toc-item" href="#juridique" style="border-top:2px solid var(--sage-l)">
-                <div class="toc-num" style="color:var(--sage-l)">07</div>
+                <div class="toc-num" style="color:var(--sage-l)">08</div>
                 <div class="toc-name">Structure Juridique</div>
             </a>
             <a class="toc-item" href="#financier" style="border-top:2px solid var(--green)">
-                <div class="toc-num" style="color:var(--green)">08</div>
+                <div class="toc-num" style="color:var(--green)">09</div>
                 <div class="toc-name">Prévisionnel Financier</div>
             </a>
             <a class="toc-item" href="#roadmap" style="border-top:2px solid var(--aout)">
-                <div class="toc-num" style="color:var(--aout)">09</div>
+                <div class="toc-num" style="color:var(--aout)">10</div>
                 <div class="toc-name">Fiche de Route</div>
             </a>
         </div>
@@ -2182,9 +2241,44 @@
 
         <div class="page-divider"></div>
 
-        <!-- 05 ÉDITORIAL -->
+        <!-- 05 ILLUSTRATIONS -->
+        <div class="chapter" id="illustrations">
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--or-l)">05</span><span class="section-name">Univers Illustré</span></div>
+            <h2 class="chapter-title reveal">Le corps,<br><em>en couleurs.</em></h2>
+            <p class="body-text reveal" style="max-width:680px">Des illustrations originales qui incarnent l'ADN Admensura : des corps réels, pulpeux et fiers, habillés de motifs floraux. La flamme — signature graphique de la marque — couronne chaque silhouette. Deux coloris explorés pour la première collection.</p>
+            <div class="sub-title reveal">Planche couleurs — Drop 1</div>
+            <div class="illus-gallery reveal">
+                <figure class="illus-frame">
+                    <span class="illus-tag" style="background:rgba(45,122,79,.85)">Coloris · Sage Bloom</span>
+                    <img src="assets/illustration-vert.png" alt="Illustration Admensura — deux silhouettes en lingerie à motifs floraux verts, surmontées de la flamme signature" loading="lazy">
+                </figure>
+                <figure class="illus-frame">
+                    <span class="illus-tag" style="background:rgba(194,59,0,.85)">Coloris · Fire Bloom</span>
+                    <img src="assets/illustration-orange.png" alt="Illustration Admensura — deux silhouettes en lingerie à motifs floraux orange, surmontées de la flamme signature" loading="lazy">
+                </figure>
+            </div>
+            <div class="illus-cap reveal"><em>« Sous le tissu, c'est déjà toi qui décidais. »</em> — Étude illustrée des deux postures campagne, déclinées sur les coloris fondateurs de la marque.</div>
+            <div class="three-col reveal" style="margin-top:24px">
+                <div class="card">
+                    <div class="card-label" style="color:var(--green-l)">Le corps célébré</div>
+                    <p class="card-text">Des morphologies réelles, sans retouche ni standardisation. L'illustration affirme le positionnement : Admensura habille la vraie femme.</p>
+                </div>
+                <div class="card">
+                    <div class="card-label" style="color:#E8660A">Le motif signature</div>
+                    <p class="card-text">Le fleuri all-over devient la texture identitaire de la marque, repris sur les pièces, les packagings et le contenu social.</p>
+                </div>
+                <div class="card">
+                    <div class="card-label" style="color:var(--or-l)">La flamme</div>
+                    <p class="card-text">Élément graphique récurrent — énergie, désir, intensité. Elle ponctue la DA sans jamais alourdir la silhouette.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <!-- 06 ÉDITORIAL -->
         <div class="chapter" id="editorial">
-            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(225,48,108,.35);color:#E1306C">05</span><span class="section-name">Ligne Éditoriale</span></div>
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(225,48,108,.35);color:#E1306C">06</span><span class="section-name">Ligne Éditoriale</span></div>
             <h2 class="chapter-title reveal">Dire les bonnes choses.<br><em>Au bon endroit.</em></h2>
             <div style="margin-bottom:20px" class="reveal">
                 <span class="platform-pill pp-ig"><span class="pp-dot"></span>Instagram — Vitrine & Âme</span>
@@ -2304,7 +2398,7 @@
 
         <!-- 06 LANCEMENT -->
         <div class="chapter" id="lancement">
-            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--or-l)">06</span><span class="section-name">Stratégie de Lancement</span></div>
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--or-l)">07</span><span class="section-name">Stratégie de Lancement</span></div>
             <h2 class="chapter-title reveal">Drop 1.<br><em>5 septembre 2026.</em></h2>
             <p class="chapter-intro reveal">La timeline complète de J-30 à J+7 — chaque action, chaque post, chaque moment clé.</p>
             <div class="kpi-strip cols-4 reveal">
@@ -2486,7 +2580,7 @@
 
         <!-- 07 JURIDIQUE -->
         <div class="chapter" id="juridique">
-            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(143,175,143,.35);color:var(--sage-l)">07</span><span class="section-name">Structure Juridique</span></div>
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(143,175,143,.35);color:var(--sage-l)">08</span><span class="section-name">Structure Juridique</span></div>
             <h2 class="chapter-title reveal">Construire<br><em>proprement</em></h2>
             <div class="kpi-strip cols-4 reveal">
                 <div class="kpi vert">
@@ -2647,7 +2741,7 @@
 
         <!-- 08 FINANCIER -->
         <div class="chapter" id="financier">
-            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(45,122,79,.4);color:var(--green)">08</span><span class="section-name">Prévisionnel Financier</span></div>
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(45,122,79,.4);color:var(--green)">09</span><span class="section-name">Prévisionnel Financier</span></div>
             <h2 class="chapter-title reveal">Les <em>chiffres</em></h2>
             <div class="kpi-strip cols-4 reveal">
                 <div class="kpi gold">
@@ -2844,7 +2938,7 @@
 
         <!-- 09 ROADMAP -->
         <div class="chapter" id="roadmap">
-            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--aout)">09</span><span class="section-name">Fiche de Route</span></div>
+            <div class="section-badge reveal"><span class="section-num" style="border-color:rgba(212,146,10,.4);color:var(--aout)">10</span><span class="section-name">Fiche de Route</span></div>
             <h2 class="chapter-title reveal">La route vers<br>le <em>Drop 1.</em></h2>
             <p class="chapter-intro reveal">De la première démarche administrative au premier colis expédié — tout, dans l'ordre, semaine par semaine.</p>
 
